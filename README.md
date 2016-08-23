@@ -1,8 +1,13 @@
 # ivanhoinacki.github.io
-> my personal Web-site
+> My Personal Web site custom with Angular2
 
+> npm install
 
+`node_modules` and `typings` directories should be created during the install.
 
+Build the project:
+
+> npm run clean & npm run build
 
 # Angular 2 QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
