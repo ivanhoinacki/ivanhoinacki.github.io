@@ -9,6 +9,7 @@ Build the project:
 
 > npm run clean & npm run build
 
+
 # Angular 2 QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
 
