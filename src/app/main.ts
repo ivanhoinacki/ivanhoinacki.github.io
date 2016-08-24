@@ -1,7 +1,7 @@
 /* Avoid: 'error TS2304: Cannot find name <type>' during compilation */
 ///<reference path="../../typings/index.d.ts"/>
 
-import {AppComponent} from "./app.component";
+import {AppComponent} from "./app";
 import {bootstrap} from "@angular/platform-browser-dynamic";
 import {provide} from "@angular/core";
 import {LocationStrategy, HashLocationStrategy} from "@angular/common";
