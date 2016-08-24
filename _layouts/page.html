@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-image">
+        <span>
+            {% for page in site.pages %}
+            {% if page.title and page.title != 'About' %}
+            <a href="{{ page.dir | prepend: site.baseurl }}"><button class="button" id={{ page.title }}>{{ page.title }}</button></a>
+            {% endif %}
+            {% endfor %}
+        </span>
+    </div>
+
+    <div class="page-content">
+        <div class="wrapper">
+            <article class="post-content">
+            {{ content }}
+            </article>
+        </div>
+    </div>
+
+      <script>
+        $({{ page.title }}).toggleClass('active');
+      </script>
+
+    {% include footer.html %}
+    </body>
+</html>

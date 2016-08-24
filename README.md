@@ -1,171 +1,99 @@
-# ivanhoinacki.github.io
-> My Personal Web site custom with Angular2
+# [ivanhoinacki.com](http://ivanhoinacki.com)
 
-> npm install
+Brazilian Front-end Engineer, developing website using HTML5, CSS3 and JavaScript.
 
-`node_modules` and `typings` directories should be created during the install.
+## How it works?
 
-Build the project:
+I use [Jekyll](http://jekyllrb.com/), a static generator in Ruby, to create this blog.
 
-> npm run clean & npm run build
+## First steps
 
+1. Install [Git](http://git-scm.com/downloads) and [Ruby](http://www.ruby-lang.org/pt/downloads/), in case you don't have them yet.
 
-# Angular 2 QuickStart Source
-[![Build Status][travis-badge]][travis-badge-url]
+2. Once installed these dependencies, open up the terminal and install [Jekyll](http://jekyllrb.com/) with the following command:
 
-This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
-the foundation for most of the documentation samples and potentially a good starting point for your application.
+  ```sh
+  $ gem install jekyll
+  ```
 
-It's been extended with testing support so you can start writing tests immediately.
+3. Now clone the project:
 
-**This is not the perfect arrangement for your application. It is not designed for production.
-It exists primarily to get you started quickly with learning and prototyping in Angular 2**
+  ```sh
+  $ git clone git@github.com:ivanhoinacki/ivanhoinacki.github.io.git
+  ```
 
-We are unlikely to accept suggestions about how to grow this QuickStart into something it is not.
-Please keep that in mind before posting issues and PRs.
+4. Navigate to the project folder:
 
-## Prerequisites
+  ```sh
+  $ cd ivanhoinacki.github.io
+  ```
 
-Node.js and npm are essential to Angular 2 development.
+5. And finally run:
 
-<a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
-Get it now</a> if it's not already installed on your machine.
+  ```sh
+  $ jekyll
+  ```
 
-**Verify that you are running at least node `v4.x.x` and npm `3.x.x`**
-by running `node -v` and `npm -v` in a terminal/console window.
-Older versions produce errors.
+You'll have access to the website at `localhost:4000` :D
 
-We recommend [nvm](https://github.com/creationix/nvm) for managing multiple versions of node and npm.
+## Browser Support
 
-## Create a new project based on the QuickStart
+![IE](https://cloud.githubusercontent.com/assets/398893/3528325/20373e76-078e-11e4-8e3a-1cb86cf506f0.png) | ![Chrome](https://cloud.githubusercontent.com/assets/398893/3528328/23bc7bc4-078e-11e4-8752-ba2809bf5cce.png) | ![Firefox](https://cloud.githubusercontent.com/assets/398893/3528329/26283ab0-078e-11e4-84d4-db2cf1009953.png) | ![Opera](https://cloud.githubusercontent.com/assets/398893/3528330/27ec9fa8-078e-11e4-95cb-709fd11dac16.png) | ![Safari](https://cloud.githubusercontent.com/assets/398893/3528331/29df8618-078e-11e4-8e3e-ed8ac738693f.png)
+--- | --- | --- | --- | --- |
+IE 8+ ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ |
 
-Clone this repo into new project folder (e.g., `my-proj`).
-```bash
-git clone  https://github.com/angular/quickstart  my-proj
-cd my-proj
+## File structure
+
+The basic file structure for the project is organized in the following way:
+
+```
+.
+|-- _includes
+|-- _layouts
+|-- _sass
+|-- _posts
+|-- _site
+|-- assets
+|-- about
+|-- blog
+|-- projects
+|-- resume
+|-- _config.yml
+`-- index.html
 ```
 
-We have no intention of updating the source on `angular/quickstart`.
-Discard everything "git-like" by deleting the `.git` folder.
-```bash
-rm -rf .git  # non-Windows
-rd .git /S/Q # windows
-```
+### [_includes](https://github.com/ivanhoinacki/ivanhoinacki.github.io/tree/master/_includes)
 
-### Create a new git repo
-You could [start writing code](#start-development) now and throw it all away when you're done.
-If you'd rather preserve your work under source control, consider taking the following steps.
+They're blocks of code used to generate the main page of the site ([index.html](https://github.com/ivanhoinacki/ivanhoinacki.github.io/blob/master/index.html)).
 
-Initialize this project as a *local git repo* and make the first commit:
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-```
+### [_sass](https://github.com/ivanhoinacki/ivanhoinacki.github.io/tree/master/_sass)
 
-Create a *remote repository* for this project on the service of your choice.
+### [blog](https://github.com/ivanhoinacki/ivanhoinacki.github.io/tree/master/blog)
 
-Grab its address (e.g. *`https://github.com/<my-org>/my-proj.git`*) and push the *local repo* to the *remote*.
-```bash
-git remote add origin <repo-address>
-git push -u origin master
-```
-## Install npm packages
+Here you'll find a list of files for each post.
 
-> See npm and nvm version notes above
+### [_layouts](https://github.com/ivanhoinacki/ivanhoinacki.github.io/tree/master/_layouts)
 
-Install the npm packages described in the `package.json` and verify that it works:
+Here you'll find the default template of the application.
 
-**Attention Windows Developers:  You must run all of these commands in administrator mode**.
+### _site
 
-```bash
-npm install
-npm start
-```
+Here you'll find all the static files generated by Jekyll after it's execution. However, this directory is unnecessary in our model, that's why it's ignored ([.gitignore](https://github.com/ivanhoinacki/ivanhoinacki.github.io/blob/master/.gitignore)).
 
-> If the `typings` folder doesn't show up after `npm install` please install them manually with:
+### [assets](https://github.com/ivanhoinacki/ivanhoinacki.github.io/tree/master/assets)
 
-> `npm run typings -- install`
+Here you'll find all images, CSS and JS files.
 
-The `npm start` command first compiles the application,
-then simultaneously re-compiles and runs the `lite-server`.
-Both the compiler and the server watch for file changes.
+### [_config.yml](https://github.com/ivanhoinacki/ivanhoinacki.github.io/blob/master/_config.yml)
 
-Shut it down manually with Ctrl-C.
+It stores most of the settings of the application.
 
-You're ready to write your application.
+### [index.html](https://github.com/ivanhoinacki/ivanhoinacki.github.io/blob/master/index.html)
 
-### npm scripts
+It's the file responsible for all application sections.
 
-We've captured many of the most useful commands in npm scripts defined in the `package.json`:
-
-* `npm start` - runs the compiler and a server at the same time, both in "watch mode".
-* `npm run tsc` - runs the TypeScript compiler once.
-* `npm run tsc:w` - runs the TypeScript compiler in watch mode; the process keeps running, awaiting changes to TypeScript files and re-compiling when it sees them.
-* `npm run lite` - runs the [lite-server](https://www.npmjs.com/package/lite-server), a light-weight, static file server, written and maintained by
-[John Papa](https://github.com/johnpapa) and
-[Christopher Martin](https://github.com/cgmartin)
-with excellent support for Angular apps that use routing.
-* `npm run typings` - runs the typings tool.
-* `npm run postinstall` - called by *npm* automatically *after* it successfully completes package installation. This script installs the TypeScript definition files this app requires.
-Here are the test related scripts:
-* `npm test` - compiles, runs and watches the karma unit tests
-* `npm run e2e` - run protractor e2e tests, written in JavaScript (*e2e-spec.js)
-
-## Testing
-
-The QuickStart documentation doesn't discuss testing.
-This repo adds both karma/jasmine unit test and protractor end-to-end testing support.
-
-These tools are configured for specific conventions described below.
-
-*It is unwise and rarely possible to run the application, the unit tests, and the e2e tests at the same time.
-We recommend that you shut down one before starting another.*
-
-### Unit Tests
-TypeScript unit-tests are usually in the `app` folder. Their filenames must end in `.spec`.
-
-Look for the example `app/app.component.spec.ts`.
-Add more `.spec.ts` files as you wish; we configured karma to find them.
-
-Run it with `npm test`
-
-That command first compiles the application, then simultaneously re-compiles and runs the karma test-runner.
-Both the compiler and the karma watch for (different) file changes.
-
-Shut it down manually with Ctrl-C.
-
-Test-runner output appears in the terminal window.
-We can update our app and our tests in real-time, keeping a weather eye on the console for broken tests.
-Karma is occasionally confused and it is often necessary to shut down its browser or even shut the command down (Ctrl-C) and
-restart it. No worries; it's pretty quick.
-
-The `HTML-Reporter` is also wired in. That produces a prettier output; look for it in `~_test-output/tests.html`.
-
-### End-to-end (E2E) Tests
-
-E2E tests are in the `e2e` directory, side by side with the `app` folder.
-Their filenames must end in `.e2e-spec.ts`.
-
-Look for the example `e2e/app.e2e-spec.ts`.
-Add more `.e2e-spec.js` files as you wish (although one usually suffices for small projects);
-we configured protractor to find them.
-
-Thereafter, run them with `npm run e2e`.
-
-That command first compiles, then simultaneously starts the Http-Server at `localhost:8080`
-and launches protractor.  
-
-The pass/fail test results appear at the bottom of the terminal window.
-A custom reporter (see `protractor.config.js`) generates a  `./_test-output/protractor-results.txt` file
-which is easier to read; this file is excluded from source control.
-
-Shut it down manually with Ctrl-C.
-
-[travis-badge]: https://travis-ci.org/angular/quickstart.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/angular/quickstart
-
+*More information about Jekyll's file structure [here](https://github.com/mojombo/jekyll/wiki/Usage).*
 
 ## License
 
-[MIT License](http://ivanhoinacki.mit-license.org/) © Ivan Hoinacki
+[MIT License](http://ivanhoinacki.mit-license.org/) ©ivanhoinacki

@@ -1,0 +1,27 @@
+# Site settings
+title: ivanhoinacki
+email: hi@ivanhoinacki.com
+description: A front-end developer who lives in Brazil.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ivanhoinacki.github.io" # the base hostname & protocol for your site
+twitter_username: ivanhoinacki
+github_username:  ivanhoinacki
+copyright: Ivan Augusto Hoinacki
+
+# Build settings
+future:      true
+lsi:         false
+pygments:    true
+markdown:    kramdown
+
+# Time zone
+timezone: Brasilia/Brazil
+
+exclude:
+  - node_modules
+  - dist
+  - Gruntfile.js
+  - package.json
+  - properties.json
+  - README.md
+  - LICENSE

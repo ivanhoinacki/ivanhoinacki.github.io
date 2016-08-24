@@ -1,0 +1,15 @@
+---
+layout: page
+title: Resume
+category: resume
+---
+
+<h3></h3>
+{% for post in site.posts %}
+  {% if post.categories contains 'resume' %}
+	<div class="post">
+		<span><a class="cn-title" href="{{ post.url }}">{{ post.title }}</a></span>
+		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	</div>
+  {% endif %}
+{% endfor %}

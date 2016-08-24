@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="header-image" >     
+<!--
+        <span>
+            {% for page in site.pages %}
+            {% if page.title and page.title != 'POSTS' %}
+            <a href="{{ page.url | prepend: site.baseurl }} "><button class="button">{{ page.title }}</button></a>
+            {% endif %}
+            {% endfor %}
+        </span>
+-->
+    </div>
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

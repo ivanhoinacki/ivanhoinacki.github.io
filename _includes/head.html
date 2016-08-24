@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAANKSURBVHjazJXbT5sFGIeffrSlh49S2jJKtxbYaHfgIBink2CiCczFLRHRmOiFmhgS42Kye/8AY3axZBfGKV6IMRq9W5w7uYUxArKUrGVyGJGC7dqxjq609Pyd/Acw+W5IfC/fiye/9/eeDJqmsRchsEexZ2Djbsnw7V/IPV5kIXyX+0vxk6Y67Q1ZlrrtZk1Vzc4b+Zrl6lCvuNg3cJot2cPJkY/0getMFso12V7ZejDxnJfRJoeNTEHFYTNSKqWHn26XztuE0FihKoxL/1H07tnEdZTErRsvhNpGj3QEQJNxiypPsnk2tqCnqxtTMfWt8jT83qHGvH4rokuRw897xYHeoQ9RUzE2UzEwmZFqVez1djyHeyikEkzOXbuUFR2/AzldinOZ9Kf7W0KQTSKg4OsfxucL0Hb0RTxHXoLUGqK/g4DvWMP1m7fe1K24zugacLe1QS6LdvwTDM52yKyi2TwYrC6wXoPEJIHWAIKw8iowoUux1WzKoxShuQuDsx0ZUNwhDFYXCiAdOgVmO2ZBxutkR3fzZKO2sP3PIxBKUM5RKFSR71yA7H2KVY10+DI0N7O4toJab4/qtkJ0er64Ep4797Z7HxblR+TkOpVcjExsCnfHcRweJ/F7s8ysxKLOjpd/0A32dR5Nx1XtzMVLX37X1t7RcsDXi7HzdaxqgbXZ31jaWCJfrMz3D44MNTqskm4rIlEbf24dvFLsG5tfzhaQ8gmWpn/m0eIfpLfWeaLswz98/uuM9cT2St636xwbdr1uVx8LyVzsouYOnY0kp0iU79HtkNkpK8R3RLpOvEN2p5J7GFv3u1yOnY/fPa0PLIVnLygRxzktGEVeCJB7pY8DfSIA49//Srn4DLvdzvvHquOWJtMYnR/oXGl/TDI2LqOWAzS0lrCZNwEolUrUC1UsYhPD7jiW/PIZEnGD7uaZBM/n9ESDD1f/HqmJAhbFiotOjHIZkRqVUgGpPr9B0D+OoVH/rbh9Z0Waujnz1lfTm9/0vXZq1GuZdMvZnzBZ7dDg5K/VROSB3/LZWW/DtKCVCYZ0gicu3yU6t4C5ZXDC2j0Y38w+O7i+mlSbWp2Cf39/2WHpnFGljYX5tQoYIah7Kv7Pr+nfAQAraWF6AAw1aAAAAABJRU5ErkJggg==" type="image/x-icon" />
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta name="google-site-verification" content="rgmpRA4Etxga2hr5Sih2W0ujlKeWEdsTedKFI95kc_U" />
+
+  <!-- build:css css/main.css -->
+  <link href="{{ '/assets/css/main.css' | prepend: site.baseurl }}"  type="text/css" rel="stylesheet" />
+  <!-- endbuild -->
+
+  <script src="{{ '/assets/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+  <script src="{{ '/assets/js/jquery-ui.min.js' | prepend: site.baseurl }}"></script>
+</head>

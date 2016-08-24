@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="home">
+  <ul class="post-list">
+    {% for post in site.posts limit: 10 %}
+    {% if post.categories contains 'blog' %}
+    <li>
+      <div>
+        <div class="post-title-icon">
+          {% if post.ico %}
+          <img src="{{ post.ico }}" />
+          {% else %}
+          <p style="margin: 0px !important">{{ post.title | split: '' | first }}</p>
+          {% endif %}
+        </div>
+        <div class="post-item">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </span>
+        </div>
+
+        <div class="post-preview">
+          <p>{{ post.content | strip_html | truncatewords:50 }}
+          </div>
+          <a class="post-meta" href="{{ post.url | prepend: site.baseurl }}">Continue reading</a>
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+      <div id="intro-copy">
+        <a href=".home"  id="arrow" ><img class="pulse"alt="Arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAYAAAB4Kn/lAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQjRFMzAyREM3QzAxMUUyQTVEREJGMkU4QzFFNTMzRiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQjRFMzAyRUM3QzAxMUUyQTVEREJGMkU4QzFFNTMzRiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjFEOUJFRTEwQzdCRjExRTJBNUREQkYyRThDMUU1MzNGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJCNEUzMDJDQzdDMDExRTJBNUREQkYyRThDMUU1MzNGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+6n6m0gAAAP1JREFUeNpivHjxIgMe0A7ERUDMhib+C4j7gbhCT08Pq0YmBvygBIuhDFCxYnwaCRnMQqYcQYPJBqMGjxo8ajCBbPkKiEXJ1P//0qVL2MTvgFw8nQYOvg4yuAmId1LR0IdAnAwy+C8QRwHxPSoY+g2Ig4Bl9GtY5L0D4kCoBCUgA2joOfRUAYqFJAoMnQg0dDGu5LYSiHvJMPQgEJcSSsflQLyHBEOfAHEo0LW/CRkMi8yHRBj6AxZZxOa810RGZhbQ0NOkZunzoFjGIz8ViOeTW1aAYnkCFvEj0PYGRYVQKTTWYeApKLKgjRaKDP4DNegsNAUEA/ELQpoAAgwAtO44Bsv2hr8AAAAASUVORK5CYII="></a>
+        <span>Scroll down</span>
+      </div>
+    </ul>
+    <div class="center">
+      <a href="{{ '/blog/index.html' | prepend: site.baseurl}}"><button class="more-button center">View full list of blog posts</button></a>
+    </div>
+  </div>
