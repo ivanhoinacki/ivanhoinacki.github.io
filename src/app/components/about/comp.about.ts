@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 import {OnInit} from "@angular/core";
 
 @Component({
-    templateUrl: './app/about/components/about.html'
+    templateUrl: './app/components/about/comp.about.html'
 })
 export class AboutComponent implements OnInit {
 
