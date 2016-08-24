@@ -8,14 +8,14 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
   directives: [],
   pipes: []
 })
+
 export class HomeCmp implements OnInit, OnDestroy {
 
   ngOnInit() {
-    // document.querySelector('.cn-loading').classList.add('cn-hidden');
+      document.querySelector('.loading').classList.add('hidden');
   }
 
   ngOnDestroy() {
-    // document.querySelector('.cn-loading').classList.remove('cn-hidden');
+    document.querySelector('.loading').classList.remove('hidden');
   }
-
 }
