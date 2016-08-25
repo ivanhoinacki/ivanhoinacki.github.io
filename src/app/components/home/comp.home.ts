@@ -13,7 +13,7 @@ export class HomeCmp implements onInit, OnDestroy {
     ngOnInit() {
         $('.description').typed({
             strings: [
-                'web deev..', 'Front-end Engineer ;)'
+                'web deev..', 'Frontend Engineer ;)'
             ],
             backDelay: 300,
             typeSpeed: 30
