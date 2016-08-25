@@ -1,0 +1,48 @@
+@import '../../../styles/mixins';
+
+:host
+  display: block
+  margin: 0 0 60px
+  padding: 20vh 0 0
+  height: 80vh
+  border-bottom: 1px solid #f2f2f2
+  text-align: center
+  background-color: #fff
+  color: #2f2f2f
+
+.cn-greeting__photo
+  margin: 0 0 15px
+  border-radius: 1000px
+  border: 2px solid #fff
+  box-shadow: 0 0 1px rgba(0, 0, 0, .3) 
+
+.cn-greeting__title
+  font-size: 30px
+  line-height: 1
+  margin: 0 0 20px
+  
+.cn-greeting__description
+  font-size: 16px
+  line-height: 22px
+  margin: 0 0 20px
+  opacity: .8
+
+.cn-greeting__description__item
+  display: block
+  a
+    color: #2f2f2f
+    text-decoration: none
+  .cn-greeting__description__item--ce:hover
+    color: #32b5b7
+  .cn-greeting__description__item--ng:hover
+    color: #f41a3a
+  
+.cn-greeting__scroll
+  position: absolute
+  display: block
+  width: 100%
+  bottom: 5px
+  @include respond-to(764)
+    bottom: 50px
+  @include respond-to(980)
+    bottom: 50px

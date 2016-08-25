@@ -1,0 +1,54 @@
+@import '../../../styles/mixins'
+
+:host
+  display: block
+  padding: 40px 0
+
+.cn-talk-list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.cn-talk-list__item
+  padding-bottom: 30px
+  margin-bottom: 30px
+  border-bottom: 1px solid #f2f2f2
+  .flag,
+  .flag__image,
+  .flag__body
+      @include respond-to-inverse(764)
+        display: block
+  .flag__image
+    padding-right: 20px
+    img
+      border: 1px solid #f2f2f2
+    @include respond-to-inverse(764)
+      padding-right: 0
+      margin-bottom: 15px
+      img
+        margin: 0 auto   
+  
+.cn-talk-list > .cn-talk-list__item:last-child
+  padding-bottom: 0
+  margin-bottom: 0
+  border: 0
+  
+.cn-talk__title
+  margin: 0
+  
+.cn-talk_time__container
+  margin-bottom: 30px
+  @include respond-to-inverse(764)
+    margin-top: 10px
+
+.cn-talk__title
+  font-size: 20px
+    
+.cn-talk__time
+  font-size: 14px
+  color: #787878
+  
+.cn-talk__nav
+  word-spacing: 7px
+  a
+    word-spacing: 0

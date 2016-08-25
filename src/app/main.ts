@@ -1,15 +1,27 @@
-/* Avoid: 'error TS2304: Cannot find name <type>' during compilation */
-///<reference path="../../typings/index.d.ts"/>
+import {Component} from 'angular2/core';
+import {RouteConfig, Route, ROUTER_DIRECTIVES, OnActivate} from 'angular2/router';
 
-import {AppComponent} from "./app";
-import {bootstrap} from "@angular/platform-browser-dynamic";
-import {provide, enableProdMode} from "@angular/core";
-import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-import {ROUTER_PROVIDERS} from "@angular/router-deprecated";
+import {HomeCmp} from './components/home/home';
+import {TalksCmp} from './components/talks/talks';
+import {TrainingCmp} from './components/training/training';
 
-enableProdMode();
+import {CnIcons} from './components/cn-icons/cn-icons';
+import {CnLogo} from './components/cn-logo/cn-logo';
+import {CnSocialMedia} from './components/cn-social-media/cn-social-media';
 
-bootstrap(AppComponent, [
-    ROUTER_PROVIDERS,
-    provide(LocationStrategy, {useClass: HashLocationStrategy})
-]);
+@Component({
+  selector: 'main-app',
+  providers: [],
+  templateUrl: 'app/main.html',
+  directives: [ROUTER_DIRECTIVES, CnIcons, CnLogo, CnSocialMedia],
+  pipes: []
+})
+@RouteConfig([
+  new Route({ path: '/', component: HomeCmp, name: 'HomeCmp' }),
+  new Route({ path: '/talks', component: TalksCmp, name: 'TalksCmp' }),
+  new Route({ path: '/training', component: TrainingCmp, name: 'TrainingCmp' })
+])
+export class MainApp {
+  inverseIcon: boolean = true;
+  iconSize: string = 'small';
+}

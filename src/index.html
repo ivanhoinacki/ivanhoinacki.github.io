@@ -1,38 +1,17 @@
+<!doctype html>
 <html>
     <head>
-        <title>ivanhoinacki | Frontend Engieener
-        </title>
+        <meta charset="utf-8">
+        <title>ivanhoinacki | Frontend Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <base href=".">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" type="text/css">
-        <link rel="canonical" href="http://ivanhoinacki.github.io/">
-        <meta name="google-site-verification" content="rgmpRA4Etxga2hr5Sih2W0ujlKeWEdsTedKFI95kc_U"/>
-
-        <link rel="stylesheet" href="app/vendor/css/normalize.css">
-        <link rel="stylesheet" href="app/app.css">
-
-        <!-- 0. Load libraries vendor -->
-        <script src="app/vendor/js/jquery.min.js"></script>
-        <script src="app/vendor/js/typed.js"></script>
-
-        <!-- 1. Load libraries -->
-        <!-- Polyfill(s) for older browsers -->
-        <script src="lib/es6-shim/es6-shim.min.js"></script>
-        <script src="lib/zone.js/dist/zone.js"></script>
-        <script src="lib/reflect-metadata/Reflect.js"></script>
-        <script src="lib/systemjs/dist/system.src.js"></script>
-        <!-- 2. Configure SystemJS -->
-        <script src="systemjs.config.js"></script>
-        <script>
-            System.import ('app').then(null, console.error.bind(console));
-        </script>
+        <link rel="stylesheet" href="vendor/normalize.css/normalize.css">
+        <link rel="stylesheet" href="app.css">
     </head>
-
-    <!-- 3. Display the application -->
     <body>
-        <ivanhoinacki-app>
+        <main-app>
             <svg width='46px' height='46px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ripple" style="position: absolute; left: 50%; top: 50%; bottom: 50%; right: 50%;">
                 <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
                 <g>
@@ -48,7 +27,25 @@
                     </circle>
                 </g>
             </svg>
-        </ivanhoinacki-app>
+        </main-app>
+        <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="vendor/systemjs/dist/system.src.js"></script>
+        <script src="vendor/rxjs/bundles/Rx.js"></script>
+        <script src="vendor/angular2/bundles/angular2.dev.js"></script>
+        <script src="vendor/angular2/bundles/http.dev.js"></script>
+        <script src="vendor/angular2/bundles/router.dev.js"></script>
+
+        <script>
+            System.config({
+                packages: {
+                    app: {
+                        format: 'register',
+                        defaultExtension: 'js'
+                    }
+                }
+            });
+            System.import ('app.js').then(null, console.error.bind(console));
+        </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-52901652-1']);
@@ -65,5 +62,6 @@
                 s.parentNode.insertBefore(ga, s);
             })();
         </script>
+
     </body>
 </html>

@@ -54,8 +54,8 @@ gulp.task("libs", () => {
             'reflect-metadata/Reflect.js',
             'rxjs/**',
             'zone.js/dist/**',
-            '@angular/**'
-        ], {cwd: "node_modules/**"}) /* Glob required here. */
+            'angular2/**'
+        ], {cwd: "vendor/**"}) /* Glob required here. */
         .pipe(gulp.dest("build/lib"));
 });
 
