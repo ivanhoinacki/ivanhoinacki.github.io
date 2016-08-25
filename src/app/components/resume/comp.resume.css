@@ -6603,6 +6603,10 @@ body {
   font-style: italic!important;
 }
 
+.title-business{
+  font-size: 140%!important;
+}
+
 #name_details #phone {
 	padding: 12px 0 0 0!important;
 	float: right!important;

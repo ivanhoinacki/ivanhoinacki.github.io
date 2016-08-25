@@ -1,8 +1,8 @@
 import {Component, OnInit   } from '@angular/core';
 import {RouteConfig,
-        Route,
-        RouterLink,
-        ROUTER_DIRECTIVES   } from '@angular/router-deprecated';
+    Route,
+    RouterLink,
+    ROUTER_DIRECTIVES   } from '@angular/router-deprecated';
 
 
 import { HomeCmp        } from './components/home/comp.home';
@@ -23,6 +23,13 @@ import { ResumeCmp      } from './components/resume/comp.resume';
 ])
 
 export class AppComponent implements OnInit {
+
+   constructor() { }
+
+    public onClickOverlay() {
+        $('#toggle').toggleClass('active');
+        $('#overlay').toggleClass('open');
+    }
 
     ngOnInit() {
         console.log("@ivanhoinacki initialized...");

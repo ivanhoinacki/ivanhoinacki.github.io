@@ -6,7 +6,7 @@
             <span>Copyright</span>&copy; Ivan Augusto Hoinacki 2016</p>
     </div>
     <!--nav button-->
-    <div class="button-background"  >
+    <div class="button-background" (click)="onClickOverlay()"  >
         <div class="button-toggle" id="toggle">
             <span class="top"></span>
             <span class="middle_1"></span>
@@ -19,10 +19,10 @@
         <nav>
             <ul>
                 <li>
-                    <!-- <a [routerLink]="['HomeCmp']" >Home</a> -->
+                    <a [routerLink]="['HomeCmp']" (click)="onClickOverlay()">Home</a>
                 </li>
                 <li>
-                    <!-- <a [routerLink]="['Resume']" >Resume</a> -->
+                    <a [routerLink]="['Resume']" (click)="onClickOverlay()">Resume</a>
                 </li>
             </ul>
             <div class="overlay-about">

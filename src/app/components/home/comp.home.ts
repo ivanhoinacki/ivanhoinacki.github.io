@@ -8,7 +8,7 @@ import {OnDestroy} from '@angular/core';
     styleUrls: ['./app/components/home/comp.home.css']
 })
 
-export class HomeCmp implements OnInit, OnDestroy {
+export class HomeCmp implements onInit, OnDestroy {
 
     ngOnInit() {
         $('.description').typed({
@@ -18,11 +18,7 @@ export class HomeCmp implements OnInit, OnDestroy {
             backDelay: 300,
             typeSpeed: 30
         });
-        $('.button-background').click(function() {
-            $('#toggle').toggleClass('active');
-            $('#overlay').toggleClass('open');
-        });
     }
 
-    ngOnDestroy() {}
+    ngOnDestroy() { }
 }
