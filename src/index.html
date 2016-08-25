@@ -3,21 +3,31 @@
         <title>ivanhoinacki | Front-end Engieener
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <base href=".">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" type="text/css">
+        <link rel="canonical" href="http://ivanhoinacki.github.io/">
+        <meta name="google-site-verification" content="rgmpRA4Etxga2hr5Sih2W0ujlKeWEdsTedKFI95kc_U"/>
+
+        <link rel="stylesheet" href="app/vendor/css/normalize.css">
+        <link rel="stylesheet" href="app/app.css">
+
+        <!-- 0. Load libraries vendor -->
+        <script src="app/vendor/js/jquery.min.js"></script>
+        <script src="app/vendor/js/typed.js"></script>
 
         <!-- 1. Load libraries -->
         <!-- Polyfill(s) for older browsers -->
         <script src="lib/es6-shim/es6-shim.min.js"></script>
-
         <script src="lib/zone.js/dist/zone.js"></script>
         <script src="lib/reflect-metadata/Reflect.js"></script>
         <script src="lib/systemjs/dist/system.src.js"></script>
-
         <!-- 2. Configure SystemJS -->
         <script src="systemjs.config.js"></script>
         <script>
             System.import ('app').then(null, console.error.bind(console));
         </script>
-
     </head>
 
     <!-- 3. Display the application -->
@@ -38,6 +48,22 @@
                     </circle>
                 </g>
             </svg>
-        </ivanhoinacki-app>
+        </ivanhoinacki-app>    
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-52901652-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol
+                    ? 'https://ssl'
+                    : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     </body>
 </html>

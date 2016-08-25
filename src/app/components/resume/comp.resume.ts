@@ -1,19 +1,9 @@
-import {Component} from "@angular/core";
-import {OnInit} from "@angular/core";
-import {OnDestroy} from "@angular/core";
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'resume',
     templateUrl: './app/components/resume/comp.resume.html',
-    styleUrls: ['./app/components/resume/comp.resume.css'],
-    providers: [],
-    directives: [],
-    pipes: []
+    styleUrls: ['./app/components/resume/comp.resume.css']
 })
 
-export class ResumeCmp implements OnInit, OnDestroy {
-
-    ngOnInit() {}
-
-    ngOnDestroy() {}
-}
+export class ResumeCmp {}
