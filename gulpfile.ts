@@ -52,9 +52,9 @@ gulp.task("libs", () => {
             'systemjs/dist/system-polyfills.js',
             'systemjs/dist/system.src.js',
             'reflect-metadata/Reflect.js',
-            'rxjs/**',
-            'zone.js/dist/**',
-            '@angular/**'
+            'rxjs/bundles/Rx.js',
+            'zone.js/dist/zone.js',
+            '@angular/**'  arrumar
         ], {cwd: "node_modules/**"}) /* Glob required here. */
         .pipe(gulp.dest("build/lib"));
 });
