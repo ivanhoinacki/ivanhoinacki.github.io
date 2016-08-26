@@ -1,9 +1,9 @@
 "format register";
-System.register("angular2/src/upgrade/metadata", ["angular2/core"], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/metadata", ["@angular/core"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var core_1 = require("angular2/core");
+  var core_1 = require("@angular/core");
   var COMPONENT_SELECTOR = /^[\w|-]*$/;
   var SKEWER_CASE = /-(\w)/g;
   var directiveResolver = new core_1.DirectiveResolver();
@@ -51,7 +51,7 @@ System.register("angular2/src/upgrade/metadata", ["angular2/core"], true, functi
   return module.exports;
 });
 
-System.register("angular2/src/upgrade/util", [], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/util", [], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -74,7 +74,7 @@ System.register("angular2/src/upgrade/util", [], true, function(require, exports
   return module.exports;
 });
 
-System.register("angular2/src/upgrade/constants", [], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/constants", [], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -96,12 +96,12 @@ System.register("angular2/src/upgrade/constants", [], true, function(require, ex
   return module.exports;
 });
 
-System.register("angular2/src/upgrade/downgrade_ng2_adapter", ["angular2/core", "angular2/src/upgrade/constants"], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/downgrade_ng2_adapter", ["@angular/core", "@angular/src/upgrade/constants"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var core_1 = require("angular2/core");
-  var constants_1 = require("angular2/src/upgrade/constants");
+  var core_1 = require("@angular/core");
+  var constants_1 = require("@angular/src/upgrade/constants");
   var INITIAL_VALUE = {__UNINITIALIZED__: true};
   var DowngradeNg2ComponentAdapter = (function() {
     function DowngradeNg2ComponentAdapter(id, info, element, attrs, scope, parentInjector, parse, viewManager, protoView) {
@@ -267,7 +267,7 @@ System.register("angular2/src/upgrade/downgrade_ng2_adapter", ["angular2/core", 
   return module.exports;
 });
 
-System.register("angular2/src/upgrade/angular_js", [], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/angular_js", [], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -293,14 +293,14 @@ System.register("angular2/src/upgrade/angular_js", [], true, function(require, e
   return module.exports;
 });
 
-System.register("angular2/src/upgrade/upgrade_ng1_adapter", ["angular2/core", "angular2/src/upgrade/constants", "angular2/src/upgrade/util", "angular2/src/upgrade/angular_js"], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/upgrade_ng1_adapter", ["@angular/core", "@angular/src/upgrade/constants", "@angular/src/upgrade/util", "@angular/src/upgrade/angular_js"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var core_1 = require("angular2/core");
-  var constants_1 = require("angular2/src/upgrade/constants");
-  var util_1 = require("angular2/src/upgrade/util");
-  var angular = require("angular2/src/upgrade/angular_js");
+  var core_1 = require("@angular/core");
+  var constants_1 = require("@angular/src/upgrade/constants");
+  var util_1 = require("@angular/src/upgrade/util");
+  var angular = require("@angular/src/upgrade/angular_js");
   var CAMEL_CASE = /([A-Z])/g;
   var INITIAL_VALUE = {__UNINITIALIZED__: true};
   var NOT_SUPPORTED = 'NOT_SUPPORTED';
@@ -578,19 +578,19 @@ System.register("angular2/src/upgrade/upgrade_ng1_adapter", ["angular2/core", "a
   return module.exports;
 });
 
-System.register("angular2/src/upgrade/upgrade_adapter", ["angular2/core", "angular2/src/facade/async", "angular2/platform/browser", "angular2/src/upgrade/metadata", "angular2/src/upgrade/util", "angular2/src/upgrade/constants", "angular2/src/upgrade/downgrade_ng2_adapter", "angular2/src/upgrade/upgrade_ng1_adapter", "angular2/src/upgrade/angular_js"], true, function(require, exports, module) {
+System.register("@angular/src/upgrade/upgrade_adapter", ["@angular/core", "@angular/src/facade/async", "@angular/platform/browser", "@angular/src/upgrade/metadata", "@angular/src/upgrade/util", "@angular/src/upgrade/constants", "@angular/src/upgrade/downgrade_ng2_adapter", "@angular/src/upgrade/upgrade_ng1_adapter", "@angular/src/upgrade/angular_js"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var core_1 = require("angular2/core");
-  var async_1 = require("angular2/src/facade/async");
-  var browser_1 = require("angular2/platform/browser");
-  var metadata_1 = require("angular2/src/upgrade/metadata");
-  var util_1 = require("angular2/src/upgrade/util");
-  var constants_1 = require("angular2/src/upgrade/constants");
-  var downgrade_ng2_adapter_1 = require("angular2/src/upgrade/downgrade_ng2_adapter");
-  var upgrade_ng1_adapter_1 = require("angular2/src/upgrade/upgrade_ng1_adapter");
-  var angular = require("angular2/src/upgrade/angular_js");
+  var core_1 = require("@angular/core");
+  var async_1 = require("@angular/src/facade/async");
+  var browser_1 = require("@angular/platform/browser");
+  var metadata_1 = require("@angular/src/upgrade/metadata");
+  var util_1 = require("@angular/src/upgrade/util");
+  var constants_1 = require("@angular/src/upgrade/constants");
+  var downgrade_ng2_adapter_1 = require("@angular/src/upgrade/downgrade_ng2_adapter");
+  var upgrade_ng1_adapter_1 = require("@angular/src/upgrade/upgrade_ng1_adapter");
+  var angular = require("@angular/src/upgrade/angular_js");
   var upgradeCount = 0;
   var UpgradeAdapter = (function() {
     function UpgradeAdapter() {
@@ -760,11 +760,11 @@ System.register("angular2/src/upgrade/upgrade_adapter", ["angular2/core", "angul
   return module.exports;
 });
 
-System.register("angular2/upgrade", ["angular2/src/upgrade/upgrade_adapter"], true, function(require, exports, module) {
+System.register("@angular/upgrade", ["@angular/src/upgrade/upgrade_adapter"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var upgrade_adapter_1 = require("angular2/src/upgrade/upgrade_adapter");
+  var upgrade_adapter_1 = require("@angular/src/upgrade/upgrade_adapter");
   exports.UpgradeAdapter = upgrade_adapter_1.UpgradeAdapter;
   exports.UpgradeAdapterRef = upgrade_adapter_1.UpgradeAdapterRef;
   global.define = __define;

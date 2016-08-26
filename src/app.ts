@@ -1,10 +1,10 @@
-import {provide, enableProdMode} from 'angular2/core';
-import {bootstrap} from 'angular2/platform/browser';
+import {provide, enableProdMode} from '@angular/core';
+import {bootstrap} from '@angular/platform/browser';
 import {
   ROUTER_PROVIDERS,
   HashLocationStrategy,
   LocationStrategy
-} from 'angular2/router';
+} from '@angular/router';
 
 import {MainApp} from './app/main';
 

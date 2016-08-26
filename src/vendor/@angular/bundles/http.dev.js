@@ -1,5 +1,5 @@
 "format register";
-System.register("angular2/src/http/interfaces", [], true, function(require, exports, module) {
+System.register("@angular/src/http/interfaces", [], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -17,13 +17,13 @@ System.register("angular2/src/http/interfaces", [], true, function(require, expo
   return module.exports;
 });
 
-System.register("angular2/src/http/headers", ["angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/facade/collection"], true, function(require, exports, module) {
+System.register("@angular/src/http/headers", ["@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/facade/collection"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var collection_1 = require("angular2/src/facade/collection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var collection_1 = require("@angular/src/facade/collection");
   var Headers = (function() {
     function Headers(headers) {
       var _this = this;
@@ -103,7 +103,7 @@ System.register("angular2/src/http/headers", ["angular2/src/facade/lang", "angul
   return module.exports;
 });
 
-System.register("angular2/src/http/enums", [], true, function(require, exports, module) {
+System.register("@angular/src/http/enums", [], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -138,12 +138,12 @@ System.register("angular2/src/http/enums", [], true, function(require, exports, 
   return module.exports;
 });
 
-System.register("angular2/src/http/url_search_params", ["angular2/src/facade/lang", "angular2/src/facade/collection"], true, function(require, exports, module) {
+System.register("@angular/src/http/url_search_params", ["@angular/src/facade/lang", "@angular/src/facade/collection"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var collection_1 = require("angular2/src/facade/collection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var collection_1 = require("@angular/src/facade/collection");
   function paramParser(rawParams) {
     if (rawParams === void 0) {
       rawParams = '';
@@ -255,13 +255,13 @@ System.register("angular2/src/http/url_search_params", ["angular2/src/facade/lan
   return module.exports;
 });
 
-System.register("angular2/src/http/static_response", ["angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/http/http_utils"], true, function(require, exports, module) {
+System.register("@angular/src/http/static_response", ["@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/http/http_utils"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var http_utils_1 = require("angular2/src/http/http_utils");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var http_utils_1 = require("@angular/src/http/http_utils");
   var Response = (function() {
     function Response(responseOptions) {
       this._body = responseOptions.body;
@@ -296,7 +296,7 @@ System.register("angular2/src/http/static_response", ["angular2/src/facade/lang"
   return module.exports;
 });
 
-System.register("angular2/src/http/base_response_options", ["angular2/core", "angular2/src/facade/lang", "angular2/src/http/headers", "angular2/src/http/enums"], true, function(require, exports, module) {
+System.register("@angular/src/http/base_response_options", ["@angular/core", "@angular/src/facade/lang", "@angular/src/http/headers", "@angular/src/http/enums"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -325,10 +325,10 @@ System.register("angular2/src/http/base_response_options", ["angular2/core", "an
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var core_1 = require("angular2/core");
-  var lang_1 = require("angular2/src/facade/lang");
-  var headers_1 = require("angular2/src/http/headers");
-  var enums_1 = require("angular2/src/http/enums");
+  var core_1 = require("@angular/core");
+  var lang_1 = require("@angular/src/facade/lang");
+  var headers_1 = require("@angular/src/http/headers");
+  var enums_1 = require("@angular/src/http/enums");
   var ResponseOptions = (function() {
     function ResponseOptions(_a) {
       var _b = _a === void 0 ? {} : _a,
@@ -376,7 +376,7 @@ System.register("angular2/src/http/base_response_options", ["angular2/core", "an
   return module.exports;
 });
 
-System.register("angular2/src/http/backends/browser_xhr", ["angular2/core"], true, function(require, exports, module) {
+System.register("@angular/src/http/backends/browser_xhr", ["@angular/core"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -396,7 +396,7 @@ System.register("angular2/src/http/backends/browser_xhr", ["angular2/core"], tru
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var core_1 = require("angular2/core");
+  var core_1 = require("@angular/core");
   var BrowserXhr = (function() {
     function BrowserXhr() {}
     BrowserXhr.prototype.build = function() {
@@ -410,7 +410,7 @@ System.register("angular2/src/http/backends/browser_xhr", ["angular2/core"], tru
   return module.exports;
 });
 
-System.register("angular2/src/http/backends/browser_jsonp", ["angular2/core", "angular2/src/facade/lang"], true, function(require, exports, module) {
+System.register("@angular/src/http/backends/browser_jsonp", ["@angular/core", "@angular/src/facade/lang"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -430,8 +430,8 @@ System.register("angular2/src/http/backends/browser_jsonp", ["angular2/core", "a
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var core_1 = require("angular2/core");
-  var lang_1 = require("angular2/src/facade/lang");
+  var core_1 = require("@angular/core");
+  var lang_1 = require("@angular/src/facade/lang");
   var _nextRequestId = 0;
   exports.JSONP_HOME = '__ng_jsonp__';
   var _jsonpConnections = null;
@@ -478,13 +478,13 @@ System.register("angular2/src/http/backends/browser_jsonp", ["angular2/core", "a
   return module.exports;
 });
 
-System.register("angular2/src/http/http_utils", ["angular2/src/facade/lang", "angular2/src/http/enums", "angular2/src/facade/exceptions", "angular2/src/facade/lang"], true, function(require, exports, module) {
+System.register("@angular/src/http/http_utils", ["@angular/src/facade/lang", "@angular/src/http/enums", "@angular/src/facade/exceptions", "@angular/src/facade/lang"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var enums_1 = require("angular2/src/http/enums");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
+  var lang_1 = require("@angular/src/facade/lang");
+  var enums_1 = require("@angular/src/http/enums");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
   function normalizeMethodName(method) {
     if (lang_1.isString(method)) {
       var originalMethod = method;
@@ -511,13 +511,13 @@ System.register("angular2/src/http/http_utils", ["angular2/src/facade/lang", "an
     return ;
   }
   exports.getResponseURL = getResponseURL;
-  var lang_2 = require("angular2/src/facade/lang");
+  var lang_2 = require("@angular/src/facade/lang");
   exports.isJsObject = lang_2.isJsObject;
   global.define = __define;
   return module.exports;
 });
 
-System.register("angular2/src/http/base_request_options", ["angular2/src/facade/lang", "angular2/src/http/headers", "angular2/src/http/enums", "angular2/core", "angular2/src/http/url_search_params", "angular2/src/http/http_utils"], true, function(require, exports, module) {
+System.register("@angular/src/http/base_request_options", ["@angular/src/facade/lang", "@angular/src/http/headers", "@angular/src/http/enums", "@angular/core", "@angular/src/http/url_search_params", "@angular/src/http/http_utils"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -546,12 +546,12 @@ System.register("angular2/src/http/base_request_options", ["angular2/src/facade/
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var lang_1 = require("angular2/src/facade/lang");
-  var headers_1 = require("angular2/src/http/headers");
-  var enums_1 = require("angular2/src/http/enums");
-  var core_1 = require("angular2/core");
-  var url_search_params_1 = require("angular2/src/http/url_search_params");
-  var http_utils_1 = require("angular2/src/http/http_utils");
+  var lang_1 = require("@angular/src/facade/lang");
+  var headers_1 = require("@angular/src/http/headers");
+  var enums_1 = require("@angular/src/http/enums");
+  var core_1 = require("@angular/core");
+  var url_search_params_1 = require("@angular/src/http/url_search_params");
+  var http_utils_1 = require("@angular/src/http/http_utils");
   var RequestOptions = (function() {
     function RequestOptions(_a) {
       var _b = _a === void 0 ? {} : _a,
@@ -594,7 +594,7 @@ System.register("angular2/src/http/base_request_options", ["angular2/src/facade/
   return module.exports;
 });
 
-System.register("angular2/src/http/backends/xhr_backend", ["angular2/src/http/enums", "angular2/src/http/static_response", "angular2/src/http/headers", "angular2/src/http/base_response_options", "angular2/core", "angular2/src/http/backends/browser_xhr", "angular2/src/facade/lang", "rxjs/Observable", "angular2/src/http/http_utils"], true, function(require, exports, module) {
+System.register("@angular/src/http/backends/xhr_backend", ["@angular/src/http/enums", "@angular/src/http/static_response", "@angular/src/http/headers", "@angular/src/http/base_response_options", "@angular/core", "@angular/src/http/backends/browser_xhr", "@angular/src/facade/lang", "rxjs/Observable", "@angular/src/http/http_utils"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -614,15 +614,15 @@ System.register("angular2/src/http/backends/xhr_backend", ["angular2/src/http/en
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var enums_1 = require("angular2/src/http/enums");
-  var static_response_1 = require("angular2/src/http/static_response");
-  var headers_1 = require("angular2/src/http/headers");
-  var base_response_options_1 = require("angular2/src/http/base_response_options");
-  var core_1 = require("angular2/core");
-  var browser_xhr_1 = require("angular2/src/http/backends/browser_xhr");
-  var lang_1 = require("angular2/src/facade/lang");
+  var enums_1 = require("@angular/src/http/enums");
+  var static_response_1 = require("@angular/src/http/static_response");
+  var headers_1 = require("@angular/src/http/headers");
+  var base_response_options_1 = require("@angular/src/http/base_response_options");
+  var core_1 = require("@angular/core");
+  var browser_xhr_1 = require("@angular/src/http/backends/browser_xhr");
+  var lang_1 = require("@angular/src/facade/lang");
   var Observable_1 = require("rxjs/Observable");
-  var http_utils_1 = require("angular2/src/http/http_utils");
+  var http_utils_1 = require("@angular/src/http/http_utils");
   var XHRConnection = (function() {
     function XHRConnection(req, browserXHR, baseResponseOptions) {
       var _this = this;
@@ -699,7 +699,7 @@ System.register("angular2/src/http/backends/xhr_backend", ["angular2/src/http/en
   return module.exports;
 });
 
-System.register("angular2/src/http/backends/jsonp_backend", ["angular2/src/http/interfaces", "angular2/src/http/enums", "angular2/src/http/static_response", "angular2/src/http/base_response_options", "angular2/core", "angular2/src/http/backends/browser_jsonp", "angular2/src/facade/exceptions", "angular2/src/facade/lang", "rxjs/Observable"], true, function(require, exports, module) {
+System.register("@angular/src/http/backends/jsonp_backend", ["@angular/src/http/interfaces", "@angular/src/http/enums", "@angular/src/http/static_response", "@angular/src/http/base_response_options", "@angular/core", "@angular/src/http/backends/browser_jsonp", "@angular/src/facade/exceptions", "@angular/src/facade/lang", "rxjs/Observable"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -728,14 +728,14 @@ System.register("angular2/src/http/backends/jsonp_backend", ["angular2/src/http/
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var interfaces_1 = require("angular2/src/http/interfaces");
-  var enums_1 = require("angular2/src/http/enums");
-  var static_response_1 = require("angular2/src/http/static_response");
-  var base_response_options_1 = require("angular2/src/http/base_response_options");
-  var core_1 = require("angular2/core");
-  var browser_jsonp_1 = require("angular2/src/http/backends/browser_jsonp");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var lang_1 = require("angular2/src/facade/lang");
+  var interfaces_1 = require("@angular/src/http/interfaces");
+  var enums_1 = require("@angular/src/http/enums");
+  var static_response_1 = require("@angular/src/http/static_response");
+  var base_response_options_1 = require("@angular/src/http/base_response_options");
+  var core_1 = require("@angular/core");
+  var browser_jsonp_1 = require("@angular/src/http/backends/browser_jsonp");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var lang_1 = require("@angular/src/facade/lang");
   var Observable_1 = require("rxjs/Observable");
   var JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
   var JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET request method.';
@@ -858,13 +858,13 @@ System.register("angular2/src/http/backends/jsonp_backend", ["angular2/src/http/
   return module.exports;
 });
 
-System.register("angular2/src/http/static_request", ["angular2/src/http/headers", "angular2/src/http/http_utils", "angular2/src/facade/lang"], true, function(require, exports, module) {
+System.register("@angular/src/http/static_request", ["@angular/src/http/headers", "@angular/src/http/http_utils", "@angular/src/facade/lang"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var headers_1 = require("angular2/src/http/headers");
-  var http_utils_1 = require("angular2/src/http/http_utils");
-  var lang_1 = require("angular2/src/facade/lang");
+  var headers_1 = require("@angular/src/http/headers");
+  var http_utils_1 = require("@angular/src/http/http_utils");
+  var lang_1 = require("@angular/src/facade/lang");
   var Request = (function() {
     function Request(requestOptions) {
       var url = requestOptions.url;
@@ -893,7 +893,7 @@ System.register("angular2/src/http/static_request", ["angular2/src/http/headers"
   return module.exports;
 });
 
-System.register("angular2/src/http/http", ["angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/core", "angular2/src/http/interfaces", "angular2/src/http/static_request", "angular2/src/http/base_request_options", "angular2/src/http/enums"], true, function(require, exports, module) {
+System.register("@angular/src/http/http", ["@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/core", "@angular/src/http/interfaces", "@angular/src/http/static_request", "@angular/src/http/base_request_options", "@angular/src/http/enums"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -922,13 +922,13 @@ System.register("angular2/src/http/http", ["angular2/src/facade/lang", "angular2
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var core_1 = require("angular2/core");
-  var interfaces_1 = require("angular2/src/http/interfaces");
-  var static_request_1 = require("angular2/src/http/static_request");
-  var base_request_options_1 = require("angular2/src/http/base_request_options");
-  var enums_1 = require("angular2/src/http/enums");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var core_1 = require("@angular/core");
+  var interfaces_1 = require("@angular/src/http/interfaces");
+  var static_request_1 = require("@angular/src/http/static_request");
+  var base_request_options_1 = require("@angular/src/http/base_request_options");
+  var enums_1 = require("@angular/src/http/enums");
   function httpRequest(backend, request) {
     return backend.createConnection(request).response;
   }
@@ -1018,49 +1018,49 @@ System.register("angular2/src/http/http", ["angular2/src/facade/lang", "angular2
   return module.exports;
 });
 
-System.register("angular2/http", ["angular2/core", "angular2/src/http/http", "angular2/src/http/backends/xhr_backend", "angular2/src/http/backends/jsonp_backend", "angular2/src/http/backends/browser_xhr", "angular2/src/http/backends/browser_jsonp", "angular2/src/http/base_request_options", "angular2/src/http/base_response_options", "angular2/src/http/static_request", "angular2/src/http/static_response", "angular2/src/http/interfaces", "angular2/src/http/backends/browser_xhr", "angular2/src/http/base_request_options", "angular2/src/http/base_response_options", "angular2/src/http/backends/xhr_backend", "angular2/src/http/backends/jsonp_backend", "angular2/src/http/http", "angular2/src/http/headers", "angular2/src/http/enums", "angular2/src/http/url_search_params"], true, function(require, exports, module) {
+System.register("@angular/http", ["@angular/core", "@angular/src/http/http", "@angular/src/http/backends/xhr_backend", "@angular/src/http/backends/jsonp_backend", "@angular/src/http/backends/browser_xhr", "@angular/src/http/backends/browser_jsonp", "@angular/src/http/base_request_options", "@angular/src/http/base_response_options", "@angular/src/http/static_request", "@angular/src/http/static_response", "@angular/src/http/interfaces", "@angular/src/http/backends/browser_xhr", "@angular/src/http/base_request_options", "@angular/src/http/base_response_options", "@angular/src/http/backends/xhr_backend", "@angular/src/http/backends/jsonp_backend", "@angular/src/http/http", "@angular/src/http/headers", "@angular/src/http/enums", "@angular/src/http/url_search_params"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var core_1 = require("angular2/core");
-  var http_1 = require("angular2/src/http/http");
-  var xhr_backend_1 = require("angular2/src/http/backends/xhr_backend");
-  var jsonp_backend_1 = require("angular2/src/http/backends/jsonp_backend");
-  var browser_xhr_1 = require("angular2/src/http/backends/browser_xhr");
-  var browser_jsonp_1 = require("angular2/src/http/backends/browser_jsonp");
-  var base_request_options_1 = require("angular2/src/http/base_request_options");
-  var base_response_options_1 = require("angular2/src/http/base_response_options");
-  var static_request_1 = require("angular2/src/http/static_request");
+  var core_1 = require("@angular/core");
+  var http_1 = require("@angular/src/http/http");
+  var xhr_backend_1 = require("@angular/src/http/backends/xhr_backend");
+  var jsonp_backend_1 = require("@angular/src/http/backends/jsonp_backend");
+  var browser_xhr_1 = require("@angular/src/http/backends/browser_xhr");
+  var browser_jsonp_1 = require("@angular/src/http/backends/browser_jsonp");
+  var base_request_options_1 = require("@angular/src/http/base_request_options");
+  var base_response_options_1 = require("@angular/src/http/base_response_options");
+  var static_request_1 = require("@angular/src/http/static_request");
   exports.Request = static_request_1.Request;
-  var static_response_1 = require("angular2/src/http/static_response");
+  var static_response_1 = require("@angular/src/http/static_response");
   exports.Response = static_response_1.Response;
-  var interfaces_1 = require("angular2/src/http/interfaces");
+  var interfaces_1 = require("@angular/src/http/interfaces");
   exports.Connection = interfaces_1.Connection;
   exports.ConnectionBackend = interfaces_1.ConnectionBackend;
-  var browser_xhr_2 = require("angular2/src/http/backends/browser_xhr");
+  var browser_xhr_2 = require("@angular/src/http/backends/browser_xhr");
   exports.BrowserXhr = browser_xhr_2.BrowserXhr;
-  var base_request_options_2 = require("angular2/src/http/base_request_options");
+  var base_request_options_2 = require("@angular/src/http/base_request_options");
   exports.BaseRequestOptions = base_request_options_2.BaseRequestOptions;
   exports.RequestOptions = base_request_options_2.RequestOptions;
-  var base_response_options_2 = require("angular2/src/http/base_response_options");
+  var base_response_options_2 = require("@angular/src/http/base_response_options");
   exports.BaseResponseOptions = base_response_options_2.BaseResponseOptions;
   exports.ResponseOptions = base_response_options_2.ResponseOptions;
-  var xhr_backend_2 = require("angular2/src/http/backends/xhr_backend");
+  var xhr_backend_2 = require("@angular/src/http/backends/xhr_backend");
   exports.XHRBackend = xhr_backend_2.XHRBackend;
   exports.XHRConnection = xhr_backend_2.XHRConnection;
-  var jsonp_backend_2 = require("angular2/src/http/backends/jsonp_backend");
+  var jsonp_backend_2 = require("@angular/src/http/backends/jsonp_backend");
   exports.JSONPBackend = jsonp_backend_2.JSONPBackend;
   exports.JSONPConnection = jsonp_backend_2.JSONPConnection;
-  var http_2 = require("angular2/src/http/http");
+  var http_2 = require("@angular/src/http/http");
   exports.Http = http_2.Http;
   exports.Jsonp = http_2.Jsonp;
-  var headers_1 = require("angular2/src/http/headers");
+  var headers_1 = require("@angular/src/http/headers");
   exports.Headers = headers_1.Headers;
-  var enums_1 = require("angular2/src/http/enums");
+  var enums_1 = require("@angular/src/http/enums");
   exports.ResponseType = enums_1.ResponseType;
   exports.ReadyState = enums_1.ReadyState;
   exports.RequestMethod = enums_1.RequestMethod;
-  var url_search_params_1 = require("angular2/src/http/url_search_params");
+  var url_search_params_1 = require("@angular/src/http/url_search_params");
   exports.URLSearchParams = url_search_params_1.URLSearchParams;
   exports.HTTP_PROVIDERS = [core_1.provide(http_1.Http, {
     useFactory: function(xhrBackend, requestOptions) {

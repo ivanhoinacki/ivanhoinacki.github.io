@@ -39,7 +39,7 @@ gulp.task("compile", ["tslint"], () => {
  * Copy all resources that are not TypeScript files into build directory.
  */
 gulp.task("resources", () => {
-    return gulp.src(["src/**/*", "!**/*.ts"])
+    return gulp.src(["src/**/*"])
         .pipe(gulp.dest("build"));
 });
 
@@ -54,7 +54,7 @@ gulp.task("libs", () => {
             'reflect-metadata/Reflect.js',
             'rxjs/**',
             'zone.js/dist/**',
-            'angular2/**'
+            '@angular/**'
         ], {cwd: "vendor/**"}) /* Glob required here. */
         .pipe(gulp.dest("build/lib"));
 });

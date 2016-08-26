@@ -1,5 +1,5 @@
 "format register";
-System.register("angular2/src/router/router_link_transform", ["angular2/compiler", "angular2/src/core/change_detection/parser/ast", "angular2/src/facade/exceptions", "angular2/core", "angular2/src/core/change_detection/parser/parser"], true, function(require, exports, module) {
+System.register("@angular/src/router/router_link_transform", ["@angular/compiler", "@angular/src/core/change_detection/parser/ast", "@angular/src/facade/exceptions", "@angular/core", "@angular/src/core/change_detection/parser/parser"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -28,11 +28,11 @@ System.register("angular2/src/router/router_link_transform", ["angular2/compiler
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var compiler_1 = require("angular2/compiler");
-  var ast_1 = require("angular2/src/core/change_detection/parser/ast");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var core_1 = require("angular2/core");
-  var parser_1 = require("angular2/src/core/change_detection/parser/parser");
+  var compiler_1 = require("@angular/compiler");
+  var ast_1 = require("@angular/src/core/change_detection/parser/ast");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var core_1 = require("@angular/core");
+  var parser_1 = require("@angular/src/core/change_detection/parser/parser");
   var FixedPart = (function() {
     function FixedPart(value) {
       this.value = value;
@@ -222,15 +222,15 @@ System.register("angular2/src/router/router_link_transform", ["angular2/compiler
   return module.exports;
 });
 
-System.register("angular2/router/router_link_dsl", ["angular2/compiler", "angular2/core", "angular2/src/router/router_link_transform", "angular2/src/facade/lang", "angular2/src/router/router_link_transform"], true, function(require, exports, module) {
+System.register("@angular/router/router_link_dsl", ["@angular/compiler", "@angular/core", "@angular/src/router/router_link_transform", "@angular/src/facade/lang", "@angular/src/router/router_link_transform"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var compiler_1 = require("angular2/compiler");
-  var core_1 = require("angular2/core");
-  var router_link_transform_1 = require("angular2/src/router/router_link_transform");
-  var lang_1 = require("angular2/src/facade/lang");
-  var router_link_transform_2 = require("angular2/src/router/router_link_transform");
+  var compiler_1 = require("@angular/compiler");
+  var core_1 = require("@angular/core");
+  var router_link_transform_1 = require("@angular/src/router/router_link_transform");
+  var lang_1 = require("@angular/src/facade/lang");
+  var router_link_transform_2 = require("@angular/src/router/router_link_transform");
   exports.RouterLinkTransform = router_link_transform_2.RouterLinkTransform;
   exports.ROUTER_LINK_DSL_PROVIDER = lang_1.CONST_EXPR(new core_1.Provider(compiler_1.TEMPLATE_TRANSFORMS, {
     useClass: router_link_transform_1.RouterLinkTransform,
@@ -240,7 +240,7 @@ System.register("angular2/router/router_link_dsl", ["angular2/compiler", "angula
   return module.exports;
 });
 
-System.register("angular2/src/router/route_config_impl", ["angular2/src/facade/lang"], true, function(require, exports, module) {
+System.register("@angular/src/router/route_config_impl", ["@angular/src/facade/lang"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -260,7 +260,7 @@ System.register("angular2/src/router/route_config_impl", ["angular2/src/facade/l
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var lang_1 = require("angular2/src/facade/lang");
+  var lang_1 = require("@angular/src/facade/lang");
   var RouteConfig = (function() {
     function RouteConfig(configs) {
       this.configs = configs;
@@ -345,7 +345,7 @@ System.register("angular2/src/router/route_config_impl", ["angular2/src/facade/l
   return module.exports;
 });
 
-System.register("angular2/src/router/instruction", ["angular2/src/facade/collection", "angular2/src/facade/lang", "angular2/src/facade/async"], true, function(require, exports, module) {
+System.register("@angular/src/router/instruction", ["@angular/src/facade/collection", "@angular/src/facade/lang", "@angular/src/facade/async"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -358,9 +358,9 @@ System.register("angular2/src/router/instruction", ["angular2/src/facade/collect
     }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
   };
-  var collection_1 = require("angular2/src/facade/collection");
-  var lang_1 = require("angular2/src/facade/lang");
-  var async_1 = require("angular2/src/facade/async");
+  var collection_1 = require("@angular/src/facade/collection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var async_1 = require("@angular/src/facade/async");
   var RouteParams = (function() {
     function RouteParams(params) {
       this.params = params;
@@ -582,7 +582,7 @@ System.register("angular2/src/router/instruction", ["angular2/src/facade/collect
   return module.exports;
 });
 
-System.register("angular2/src/router/url_parser", ["angular2/src/facade/collection", "angular2/src/facade/lang", "angular2/src/facade/exceptions"], true, function(require, exports, module) {
+System.register("@angular/src/router/url_parser", ["@angular/src/facade/collection", "@angular/src/facade/lang", "@angular/src/facade/exceptions"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -595,9 +595,9 @@ System.register("angular2/src/router/url_parser", ["angular2/src/facade/collecti
     }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
   };
-  var collection_1 = require("angular2/src/facade/collection");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
+  var collection_1 = require("@angular/src/facade/collection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
   var Url = (function() {
     function Url(path, child, auxiliary, params) {
       if (child === void 0) {
@@ -814,12 +814,12 @@ System.register("angular2/src/router/url_parser", ["angular2/src/facade/collecti
   return module.exports;
 });
 
-System.register("angular2/src/router/async_route_handler", ["angular2/src/facade/lang", "angular2/src/router/instruction"], true, function(require, exports, module) {
+System.register("@angular/src/router/async_route_handler", ["@angular/src/facade/lang", "@angular/src/router/instruction"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var instruction_1 = require("angular2/src/router/instruction");
+  var lang_1 = require("@angular/src/facade/lang");
+  var instruction_1 = require("@angular/src/router/instruction");
   var AsyncRouteHandler = (function() {
     function AsyncRouteHandler(_loader, data) {
       if (data === void 0) {
@@ -846,13 +846,13 @@ System.register("angular2/src/router/async_route_handler", ["angular2/src/facade
   return module.exports;
 });
 
-System.register("angular2/src/router/sync_route_handler", ["angular2/src/facade/async", "angular2/src/facade/lang", "angular2/src/router/instruction"], true, function(require, exports, module) {
+System.register("@angular/src/router/sync_route_handler", ["@angular/src/facade/async", "@angular/src/facade/lang", "@angular/src/router/instruction"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var async_1 = require("angular2/src/facade/async");
-  var lang_1 = require("angular2/src/facade/lang");
-  var instruction_1 = require("angular2/src/router/instruction");
+  var async_1 = require("@angular/src/facade/async");
+  var lang_1 = require("@angular/src/facade/lang");
+  var instruction_1 = require("@angular/src/router/instruction");
   var SyncRouteHandler = (function() {
     function SyncRouteHandler(componentType, data) {
       this.componentType = componentType;
@@ -870,13 +870,13 @@ System.register("angular2/src/router/sync_route_handler", ["angular2/src/facade/
   return module.exports;
 });
 
-System.register("angular2/src/router/route_config_decorator", ["angular2/src/router/route_config_impl", "angular2/src/core/util/decorators", "angular2/src/router/route_config_impl"], true, function(require, exports, module) {
+System.register("@angular/src/router/route_config_decorator", ["@angular/src/router/route_config_impl", "@angular/src/core/util/decorators", "@angular/src/router/route_config_impl"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var route_config_impl_1 = require("angular2/src/router/route_config_impl");
-  var decorators_1 = require("angular2/src/core/util/decorators");
-  var route_config_impl_2 = require("angular2/src/router/route_config_impl");
+  var route_config_impl_1 = require("@angular/src/router/route_config_impl");
+  var decorators_1 = require("@angular/src/core/util/decorators");
+  var route_config_impl_2 = require("@angular/src/router/route_config_impl");
   exports.Route = route_config_impl_2.Route;
   exports.Redirect = route_config_impl_2.Redirect;
   exports.AuxRoute = route_config_impl_2.AuxRoute;
@@ -886,12 +886,12 @@ System.register("angular2/src/router/route_config_decorator", ["angular2/src/rou
   return module.exports;
 });
 
-System.register("angular2/src/router/location_strategy", ["angular2/src/facade/lang", "angular2/core"], true, function(require, exports, module) {
+System.register("@angular/src/router/location_strategy", ["@angular/src/facade/lang", "@angular/core"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var core_1 = require("angular2/core");
+  var lang_1 = require("@angular/src/facade/lang");
+  var core_1 = require("@angular/core");
   var LocationStrategy = (function() {
     function LocationStrategy() {}
     return LocationStrategy;
@@ -929,7 +929,7 @@ System.register("angular2/src/router/location_strategy", ["angular2/src/facade/l
   return module.exports;
 });
 
-System.register("angular2/src/router/lifecycle_annotations_impl", ["angular2/src/facade/lang"], true, function(require, exports, module) {
+System.register("@angular/src/router/lifecycle_annotations_impl", ["@angular/src/facade/lang"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -949,7 +949,7 @@ System.register("angular2/src/router/lifecycle_annotations_impl", ["angular2/src
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var lang_1 = require("angular2/src/facade/lang");
+  var lang_1 = require("@angular/src/facade/lang");
   var RouteLifecycleHook = (function() {
     function RouteLifecycleHook(name) {
       this.name = name;
@@ -975,13 +975,13 @@ System.register("angular2/src/router/lifecycle_annotations_impl", ["angular2/src
   return module.exports;
 });
 
-System.register("angular2/src/router/lifecycle_annotations", ["angular2/src/core/util/decorators", "angular2/src/router/lifecycle_annotations_impl", "angular2/src/router/lifecycle_annotations_impl"], true, function(require, exports, module) {
+System.register("@angular/src/router/lifecycle_annotations", ["@angular/src/core/util/decorators", "@angular/src/router/lifecycle_annotations_impl", "@angular/src/router/lifecycle_annotations_impl"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var decorators_1 = require("angular2/src/core/util/decorators");
-  var lifecycle_annotations_impl_1 = require("angular2/src/router/lifecycle_annotations_impl");
-  var lifecycle_annotations_impl_2 = require("angular2/src/router/lifecycle_annotations_impl");
+  var decorators_1 = require("@angular/src/core/util/decorators");
+  var lifecycle_annotations_impl_1 = require("@angular/src/router/lifecycle_annotations_impl");
+  var lifecycle_annotations_impl_2 = require("@angular/src/router/lifecycle_annotations_impl");
   exports.routerCanReuse = lifecycle_annotations_impl_2.routerCanReuse;
   exports.routerCanDeactivate = lifecycle_annotations_impl_2.routerCanDeactivate;
   exports.routerOnActivate = lifecycle_annotations_impl_2.routerOnActivate;
@@ -992,7 +992,7 @@ System.register("angular2/src/router/lifecycle_annotations", ["angular2/src/core
   return module.exports;
 });
 
-System.register("angular2/src/router/router_link", ["angular2/core", "angular2/src/facade/lang", "angular2/src/router/router", "angular2/src/router/location"], true, function(require, exports, module) {
+System.register("@angular/src/router/router_link", ["@angular/core", "@angular/src/facade/lang", "@angular/src/router/router", "@angular/src/router/location"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1012,10 +1012,10 @@ System.register("angular2/src/router/router_link", ["angular2/core", "angular2/s
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var core_1 = require("angular2/core");
-  var lang_1 = require("angular2/src/facade/lang");
-  var router_1 = require("angular2/src/router/router");
-  var location_1 = require("angular2/src/router/location");
+  var core_1 = require("@angular/core");
+  var lang_1 = require("@angular/src/facade/lang");
+  var router_1 = require("@angular/src/router/router");
+  var location_1 = require("@angular/src/router/location");
   var RouterLink = (function() {
     function RouterLink(_router, _location) {
       this._router = _router;
@@ -1061,7 +1061,7 @@ System.register("angular2/src/router/router_link", ["angular2/core", "angular2/s
   return module.exports;
 });
 
-System.register("angular2/src/router/hash_location_strategy", ["angular2/core", "angular2/src/router/location_strategy", "angular2/src/facade/lang", "angular2/src/router/platform_location"], true, function(require, exports, module) {
+System.register("@angular/src/router/hash_location_strategy", ["@angular/core", "@angular/src/router/location_strategy", "@angular/src/facade/lang", "@angular/src/router/platform_location"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1095,10 +1095,10 @@ System.register("angular2/src/router/hash_location_strategy", ["angular2/core", 
       decorator(target, key, paramIndex);
     };
   };
-  var core_1 = require("angular2/core");
-  var location_strategy_1 = require("angular2/src/router/location_strategy");
-  var lang_1 = require("angular2/src/facade/lang");
-  var platform_location_1 = require("angular2/src/router/platform_location");
+  var core_1 = require("@angular/core");
+  var location_strategy_1 = require("@angular/src/router/location_strategy");
+  var lang_1 = require("@angular/src/facade/lang");
+  var platform_location_1 = require("@angular/src/router/platform_location");
   var HashLocationStrategy = (function(_super) {
     __extends(HashLocationStrategy, _super);
     function HashLocationStrategy(_platformLocation, _baseHref) {
@@ -1152,7 +1152,7 @@ System.register("angular2/src/router/hash_location_strategy", ["angular2/core", 
   return module.exports;
 });
 
-System.register("angular2/src/router/path_location_strategy", ["angular2/core", "angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/router/location_strategy", "angular2/src/router/platform_location"], true, function(require, exports, module) {
+System.register("@angular/src/router/path_location_strategy", ["@angular/core", "@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/router/location_strategy", "@angular/src/router/platform_location"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1186,11 +1186,11 @@ System.register("angular2/src/router/path_location_strategy", ["angular2/core", 
       decorator(target, key, paramIndex);
     };
   };
-  var core_1 = require("angular2/core");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var location_strategy_1 = require("angular2/src/router/location_strategy");
-  var platform_location_1 = require("angular2/src/router/platform_location");
+  var core_1 = require("@angular/core");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var location_strategy_1 = require("@angular/src/router/location_strategy");
+  var platform_location_1 = require("@angular/src/router/platform_location");
   var PathLocationStrategy = (function(_super) {
     __extends(PathLocationStrategy, _super);
     function PathLocationStrategy(_platformLocation, href) {
@@ -1239,7 +1239,7 @@ System.register("angular2/src/router/path_location_strategy", ["angular2/core", 
   return module.exports;
 });
 
-System.register("angular2/src/router/route_definition", [], true, function(require, exports, module) {
+System.register("@angular/src/router/route_definition", [], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1247,14 +1247,14 @@ System.register("angular2/src/router/route_definition", [], true, function(requi
   return module.exports;
 });
 
-System.register("angular2/src/router/path_recognizer", ["angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/facade/collection", "angular2/src/router/url_parser"], true, function(require, exports, module) {
+System.register("@angular/src/router/path_recognizer", ["@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/facade/collection", "@angular/src/router/url_parser"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var collection_1 = require("angular2/src/facade/collection");
-  var url_parser_1 = require("angular2/src/router/url_parser");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var collection_1 = require("@angular/src/facade/collection");
+  var url_parser_1 = require("@angular/src/router/url_parser");
   var TouchMap = (function() {
     function TouchMap(map) {
       var _this = this;
@@ -1492,18 +1492,18 @@ System.register("angular2/src/router/path_recognizer", ["angular2/src/facade/lan
   return module.exports;
 });
 
-System.register("angular2/src/router/component_recognizer", ["angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/facade/collection", "angular2/src/facade/async", "angular2/src/router/route_recognizer", "angular2/src/router/route_config_impl", "angular2/src/router/async_route_handler", "angular2/src/router/sync_route_handler"], true, function(require, exports, module) {
+System.register("@angular/src/router/component_recognizer", ["@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/facade/collection", "@angular/src/facade/async", "@angular/src/router/route_recognizer", "@angular/src/router/route_config_impl", "@angular/src/router/async_route_handler", "@angular/src/router/sync_route_handler"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var collection_1 = require("angular2/src/facade/collection");
-  var async_1 = require("angular2/src/facade/async");
-  var route_recognizer_1 = require("angular2/src/router/route_recognizer");
-  var route_config_impl_1 = require("angular2/src/router/route_config_impl");
-  var async_route_handler_1 = require("angular2/src/router/async_route_handler");
-  var sync_route_handler_1 = require("angular2/src/router/sync_route_handler");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var collection_1 = require("@angular/src/facade/collection");
+  var async_1 = require("@angular/src/facade/async");
+  var route_recognizer_1 = require("@angular/src/router/route_recognizer");
+  var route_config_impl_1 = require("@angular/src/router/route_config_impl");
+  var async_route_handler_1 = require("@angular/src/router/async_route_handler");
+  var sync_route_handler_1 = require("@angular/src/router/sync_route_handler");
   var ComponentRecognizer = (function() {
     function ComponentRecognizer() {
       this.names = new collection_1.Map();
@@ -1610,13 +1610,13 @@ System.register("angular2/src/router/component_recognizer", ["angular2/src/facad
   return module.exports;
 });
 
-System.register("angular2/src/router/route_config_nomalizer", ["angular2/src/router/route_config_decorator", "angular2/src/facade/lang", "angular2/src/facade/exceptions"], true, function(require, exports, module) {
+System.register("@angular/src/router/route_config_nomalizer", ["@angular/src/router/route_config_decorator", "@angular/src/facade/lang", "@angular/src/facade/exceptions"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var route_config_decorator_1 = require("angular2/src/router/route_config_decorator");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
+  var route_config_decorator_1 = require("@angular/src/router/route_config_decorator");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
   function normalizeRouteConfig(config, registry) {
     if (config instanceof route_config_decorator_1.AsyncRoute) {
       var wrappedLoader = wrapLoaderToReconfigureRegistry(config.loader, registry);
@@ -1707,7 +1707,7 @@ System.register("angular2/src/router/route_config_nomalizer", ["angular2/src/rou
   return module.exports;
 });
 
-System.register("angular2/src/router/location", ["angular2/src/router/location_strategy", "angular2/src/facade/async", "angular2/core"], true, function(require, exports, module) {
+System.register("@angular/src/router/location", ["@angular/src/router/location_strategy", "@angular/src/facade/async", "@angular/core"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1727,9 +1727,9 @@ System.register("angular2/src/router/location", ["angular2/src/router/location_s
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var location_strategy_1 = require("angular2/src/router/location_strategy");
-  var async_1 = require("angular2/src/facade/async");
-  var core_1 = require("angular2/core");
+  var location_strategy_1 = require("@angular/src/router/location_strategy");
+  var async_1 = require("@angular/src/facade/async");
+  var core_1 = require("@angular/core");
   var Location = (function() {
     function Location(platformStrategy) {
       var _this = this;
@@ -1810,13 +1810,13 @@ System.register("angular2/src/router/location", ["angular2/src/router/location_s
   return module.exports;
 });
 
-System.register("angular2/src/router/route_lifecycle_reflector", ["angular2/src/facade/lang", "angular2/src/router/lifecycle_annotations_impl", "angular2/src/core/reflection/reflection"], true, function(require, exports, module) {
+System.register("@angular/src/router/route_lifecycle_reflector", ["@angular/src/facade/lang", "@angular/src/router/lifecycle_annotations_impl", "@angular/src/core/reflection/reflection"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
-  var lang_1 = require("angular2/src/facade/lang");
-  var lifecycle_annotations_impl_1 = require("angular2/src/router/lifecycle_annotations_impl");
-  var reflection_1 = require("angular2/src/core/reflection/reflection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var lifecycle_annotations_impl_1 = require("@angular/src/router/lifecycle_annotations_impl");
+  var reflection_1 = require("@angular/src/core/reflection/reflection");
   function hasLifecycleHook(e, type) {
     if (!(type instanceof lang_1.Type))
       return false;
@@ -1838,7 +1838,7 @@ System.register("angular2/src/router/route_lifecycle_reflector", ["angular2/src/
   return module.exports;
 });
 
-System.register("angular2/src/router/router_outlet", ["angular2/src/facade/async", "angular2/src/facade/collection", "angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/core", "angular2/src/router/router", "angular2/src/router/instruction", "angular2/src/router/lifecycle_annotations", "angular2/src/router/route_lifecycle_reflector"], true, function(require, exports, module) {
+System.register("@angular/src/router/router_outlet", ["@angular/src/facade/async", "@angular/src/facade/collection", "@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/core", "@angular/src/router/router", "@angular/src/router/instruction", "@angular/src/router/lifecycle_annotations", "@angular/src/router/route_lifecycle_reflector"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1863,15 +1863,15 @@ System.register("angular2/src/router/router_outlet", ["angular2/src/facade/async
       decorator(target, key, paramIndex);
     };
   };
-  var async_1 = require("angular2/src/facade/async");
-  var collection_1 = require("angular2/src/facade/collection");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var core_1 = require("angular2/core");
-  var routerMod = require("angular2/src/router/router");
-  var instruction_1 = require("angular2/src/router/instruction");
-  var hookMod = require("angular2/src/router/lifecycle_annotations");
-  var route_lifecycle_reflector_1 = require("angular2/src/router/route_lifecycle_reflector");
+  var async_1 = require("@angular/src/facade/async");
+  var collection_1 = require("@angular/src/facade/collection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var core_1 = require("@angular/core");
+  var routerMod = require("@angular/src/router/router");
+  var instruction_1 = require("@angular/src/router/instruction");
+  var hookMod = require("@angular/src/router/lifecycle_annotations");
+  var route_lifecycle_reflector_1 = require("@angular/src/router/route_lifecycle_reflector");
   var _resolveToTrue = async_1.PromiseWrapper.resolve(true);
   var RouterOutlet = (function() {
     function RouterOutlet(_elementRef, _loader, _parentRouter, nameAttr) {
@@ -1951,7 +1951,7 @@ System.register("angular2/src/router/router_outlet", ["angular2/src/facade/async
   return module.exports;
 });
 
-System.register("angular2/src/router/platform_location", ["angular2/src/platform/dom/dom_adapter", "angular2/core"], true, function(require, exports, module) {
+System.register("@angular/src/router/platform_location", ["@angular/src/platform/dom/dom_adapter", "@angular/core"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -1971,8 +1971,8 @@ System.register("angular2/src/router/platform_location", ["angular2/src/platform
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
       return Reflect.metadata(k, v);
   };
-  var dom_adapter_1 = require("angular2/src/platform/dom/dom_adapter");
-  var core_1 = require("angular2/core");
+  var dom_adapter_1 = require("@angular/src/platform/dom/dom_adapter");
+  var core_1 = require("@angular/core");
   var PlatformLocation = (function() {
     function PlatformLocation() {
       this._init();
@@ -2034,7 +2034,7 @@ System.register("angular2/src/router/platform_location", ["angular2/src/platform
   return module.exports;
 });
 
-System.register("angular2/src/router/route_recognizer", ["angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/facade/promise", "angular2/src/facade/collection", "angular2/src/router/instruction", "angular2/src/router/path_recognizer"], true, function(require, exports, module) {
+System.register("@angular/src/router/route_recognizer", ["@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/facade/promise", "@angular/src/facade/collection", "@angular/src/router/instruction", "@angular/src/router/path_recognizer"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -2047,12 +2047,12 @@ System.register("angular2/src/router/route_recognizer", ["angular2/src/facade/la
     }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
   };
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var promise_1 = require("angular2/src/facade/promise");
-  var collection_1 = require("angular2/src/facade/collection");
-  var instruction_1 = require("angular2/src/router/instruction");
-  var path_recognizer_1 = require("angular2/src/router/path_recognizer");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var promise_1 = require("@angular/src/facade/promise");
+  var collection_1 = require("@angular/src/facade/collection");
+  var instruction_1 = require("@angular/src/router/instruction");
+  var path_recognizer_1 = require("@angular/src/router/path_recognizer");
   var RouteMatch = (function() {
     function RouteMatch() {}
     return RouteMatch;
@@ -2149,7 +2149,7 @@ System.register("angular2/src/router/route_recognizer", ["angular2/src/facade/la
   return module.exports;
 });
 
-System.register("angular2/src/router/route_registry", ["angular2/src/facade/collection", "angular2/src/facade/async", "angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/src/core/reflection/reflection", "angular2/core", "angular2/src/router/route_config_impl", "angular2/src/router/route_recognizer", "angular2/src/router/component_recognizer", "angular2/src/router/instruction", "angular2/src/router/route_config_nomalizer", "angular2/src/router/url_parser"], true, function(require, exports, module) {
+System.register("@angular/src/router/route_registry", ["@angular/src/facade/collection", "@angular/src/facade/async", "@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/src/core/reflection/reflection", "@angular/core", "@angular/src/router/route_config_impl", "@angular/src/router/route_recognizer", "@angular/src/router/component_recognizer", "@angular/src/router/instruction", "@angular/src/router/route_config_nomalizer", "@angular/src/router/url_parser"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -2174,18 +2174,18 @@ System.register("angular2/src/router/route_registry", ["angular2/src/facade/coll
       decorator(target, key, paramIndex);
     };
   };
-  var collection_1 = require("angular2/src/facade/collection");
-  var async_1 = require("angular2/src/facade/async");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var reflection_1 = require("angular2/src/core/reflection/reflection");
-  var core_1 = require("angular2/core");
-  var route_config_impl_1 = require("angular2/src/router/route_config_impl");
-  var route_recognizer_1 = require("angular2/src/router/route_recognizer");
-  var component_recognizer_1 = require("angular2/src/router/component_recognizer");
-  var instruction_1 = require("angular2/src/router/instruction");
-  var route_config_nomalizer_1 = require("angular2/src/router/route_config_nomalizer");
-  var url_parser_1 = require("angular2/src/router/url_parser");
+  var collection_1 = require("@angular/src/facade/collection");
+  var async_1 = require("@angular/src/facade/async");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var reflection_1 = require("@angular/src/core/reflection/reflection");
+  var core_1 = require("@angular/core");
+  var route_config_impl_1 = require("@angular/src/router/route_config_impl");
+  var route_recognizer_1 = require("@angular/src/router/route_recognizer");
+  var component_recognizer_1 = require("@angular/src/router/component_recognizer");
+  var instruction_1 = require("@angular/src/router/instruction");
+  var route_config_nomalizer_1 = require("@angular/src/router/route_config_nomalizer");
+  var url_parser_1 = require("@angular/src/router/url_parser");
   var _resolveToNull = async_1.PromiseWrapper.resolve(null);
   exports.ROUTER_PRIMARY_COMPONENT = lang_1.CONST_EXPR(new core_1.OpaqueToken('RouterPrimaryComponent'));
   var RouteRegistry = (function() {
@@ -2478,7 +2478,7 @@ System.register("angular2/src/router/route_registry", ["angular2/src/facade/coll
   return module.exports;
 });
 
-System.register("angular2/src/router/router", ["angular2/src/facade/async", "angular2/src/facade/collection", "angular2/src/facade/lang", "angular2/src/facade/exceptions", "angular2/core", "angular2/src/router/route_registry", "angular2/src/router/location", "angular2/src/router/route_lifecycle_reflector"], true, function(require, exports, module) {
+System.register("@angular/src/router/router", ["@angular/src/facade/async", "@angular/src/facade/collection", "@angular/src/facade/lang", "@angular/src/facade/exceptions", "@angular/core", "@angular/src/router/route_registry", "@angular/src/router/location", "@angular/src/router/route_lifecycle_reflector"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -2512,14 +2512,14 @@ System.register("angular2/src/router/router", ["angular2/src/facade/async", "ang
       decorator(target, key, paramIndex);
     };
   };
-  var async_1 = require("angular2/src/facade/async");
-  var collection_1 = require("angular2/src/facade/collection");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
-  var core_1 = require("angular2/core");
-  var route_registry_1 = require("angular2/src/router/route_registry");
-  var location_1 = require("angular2/src/router/location");
-  var route_lifecycle_reflector_1 = require("angular2/src/router/route_lifecycle_reflector");
+  var async_1 = require("@angular/src/facade/async");
+  var collection_1 = require("@angular/src/facade/collection");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
+  var core_1 = require("@angular/core");
+  var route_registry_1 = require("@angular/src/router/route_registry");
+  var location_1 = require("@angular/src/router/location");
+  var route_lifecycle_reflector_1 = require("@angular/src/router/route_lifecycle_reflector");
   var _resolveToTrue = async_1.PromiseWrapper.resolve(true);
   var _resolveToFalse = async_1.PromiseWrapper.resolve(false);
   var Router = (function() {
@@ -2891,7 +2891,7 @@ System.register("angular2/src/router/router", ["angular2/src/facade/async", "ang
   return module.exports;
 });
 
-System.register("angular2/router", ["angular2/src/router/router", "angular2/src/router/router_outlet", "angular2/src/router/router_link", "angular2/src/router/instruction", "angular2/src/router/platform_location", "angular2/src/router/route_registry", "angular2/src/router/location_strategy", "angular2/src/router/hash_location_strategy", "angular2/src/router/path_location_strategy", "angular2/src/router/location", "angular2/src/router/route_config_decorator", "angular2/src/router/route_definition", "angular2/src/router/lifecycle_annotations", "angular2/src/router/instruction", "angular2/core", "angular2/src/router/platform_location", "angular2/src/router/location_strategy", "angular2/src/router/path_location_strategy", "angular2/src/router/router", "angular2/src/router/router_outlet", "angular2/src/router/router_link", "angular2/src/router/route_registry", "angular2/src/router/location", "angular2/core", "angular2/src/facade/lang", "angular2/src/facade/exceptions"], true, function(require, exports, module) {
+System.register("@angular/router", ["@angular/src/router/router", "@angular/src/router/router_outlet", "@angular/src/router/router_link", "@angular/src/router/instruction", "@angular/src/router/platform_location", "@angular/src/router/route_registry", "@angular/src/router/location_strategy", "@angular/src/router/hash_location_strategy", "@angular/src/router/path_location_strategy", "@angular/src/router/location", "@angular/src/router/route_config_decorator", "@angular/src/router/route_definition", "@angular/src/router/lifecycle_annotations", "@angular/src/router/instruction", "@angular/core", "@angular/src/router/platform_location", "@angular/src/router/location_strategy", "@angular/src/router/path_location_strategy", "@angular/src/router/router", "@angular/src/router/router_outlet", "@angular/src/router/router_link", "@angular/src/router/route_registry", "@angular/src/router/location", "@angular/core", "@angular/src/facade/lang", "@angular/src/facade/exceptions"], true, function(require, exports, module) {
   var global = System.global,
       __define = global.define;
   global.define = undefined;
@@ -2900,49 +2900,49 @@ System.register("angular2/router", ["angular2/src/router/router", "angular2/src/
       if (!exports.hasOwnProperty(p))
         exports[p] = m[p];
   }
-  var router_1 = require("angular2/src/router/router");
+  var router_1 = require("@angular/src/router/router");
   exports.Router = router_1.Router;
-  var router_outlet_1 = require("angular2/src/router/router_outlet");
+  var router_outlet_1 = require("@angular/src/router/router_outlet");
   exports.RouterOutlet = router_outlet_1.RouterOutlet;
-  var router_link_1 = require("angular2/src/router/router_link");
+  var router_link_1 = require("@angular/src/router/router_link");
   exports.RouterLink = router_link_1.RouterLink;
-  var instruction_1 = require("angular2/src/router/instruction");
+  var instruction_1 = require("@angular/src/router/instruction");
   exports.RouteParams = instruction_1.RouteParams;
   exports.RouteData = instruction_1.RouteData;
-  var platform_location_1 = require("angular2/src/router/platform_location");
+  var platform_location_1 = require("@angular/src/router/platform_location");
   exports.PlatformLocation = platform_location_1.PlatformLocation;
-  var route_registry_1 = require("angular2/src/router/route_registry");
+  var route_registry_1 = require("@angular/src/router/route_registry");
   exports.RouteRegistry = route_registry_1.RouteRegistry;
   exports.ROUTER_PRIMARY_COMPONENT = route_registry_1.ROUTER_PRIMARY_COMPONENT;
-  var location_strategy_1 = require("angular2/src/router/location_strategy");
+  var location_strategy_1 = require("@angular/src/router/location_strategy");
   exports.LocationStrategy = location_strategy_1.LocationStrategy;
   exports.APP_BASE_HREF = location_strategy_1.APP_BASE_HREF;
-  var hash_location_strategy_1 = require("angular2/src/router/hash_location_strategy");
+  var hash_location_strategy_1 = require("@angular/src/router/hash_location_strategy");
   exports.HashLocationStrategy = hash_location_strategy_1.HashLocationStrategy;
-  var path_location_strategy_1 = require("angular2/src/router/path_location_strategy");
+  var path_location_strategy_1 = require("@angular/src/router/path_location_strategy");
   exports.PathLocationStrategy = path_location_strategy_1.PathLocationStrategy;
-  var location_1 = require("angular2/src/router/location");
+  var location_1 = require("@angular/src/router/location");
   exports.Location = location_1.Location;
-  __export(require("angular2/src/router/route_config_decorator"));
-  __export(require("angular2/src/router/route_definition"));
-  var lifecycle_annotations_1 = require("angular2/src/router/lifecycle_annotations");
+  __export(require("@angular/src/router/route_config_decorator"));
+  __export(require("@angular/src/router/route_definition"));
+  var lifecycle_annotations_1 = require("@angular/src/router/lifecycle_annotations");
   exports.CanActivate = lifecycle_annotations_1.CanActivate;
-  var instruction_2 = require("angular2/src/router/instruction");
+  var instruction_2 = require("@angular/src/router/instruction");
   exports.Instruction = instruction_2.Instruction;
   exports.ComponentInstruction = instruction_2.ComponentInstruction;
-  var core_1 = require("angular2/core");
+  var core_1 = require("@angular/core");
   exports.OpaqueToken = core_1.OpaqueToken;
-  var platform_location_2 = require("angular2/src/router/platform_location");
-  var location_strategy_2 = require("angular2/src/router/location_strategy");
-  var path_location_strategy_2 = require("angular2/src/router/path_location_strategy");
-  var router_2 = require("angular2/src/router/router");
-  var router_outlet_2 = require("angular2/src/router/router_outlet");
-  var router_link_2 = require("angular2/src/router/router_link");
-  var route_registry_2 = require("angular2/src/router/route_registry");
-  var location_2 = require("angular2/src/router/location");
-  var core_2 = require("angular2/core");
-  var lang_1 = require("angular2/src/facade/lang");
-  var exceptions_1 = require("angular2/src/facade/exceptions");
+  var platform_location_2 = require("@angular/src/router/platform_location");
+  var location_strategy_2 = require("@angular/src/router/location_strategy");
+  var path_location_strategy_2 = require("@angular/src/router/path_location_strategy");
+  var router_2 = require("@angular/src/router/router");
+  var router_outlet_2 = require("@angular/src/router/router_outlet");
+  var router_link_2 = require("@angular/src/router/router_link");
+  var route_registry_2 = require("@angular/src/router/route_registry");
+  var location_2 = require("@angular/src/router/location");
+  var core_2 = require("@angular/core");
+  var lang_1 = require("@angular/src/facade/lang");
+  var exceptions_1 = require("@angular/src/facade/exceptions");
   exports.ROUTER_DIRECTIVES = lang_1.CONST_EXPR([router_outlet_2.RouterOutlet, router_link_2.RouterLink]);
   exports.ROUTER_PROVIDERS = lang_1.CONST_EXPR([route_registry_2.RouteRegistry, lang_1.CONST_EXPR(new core_2.Provider(location_strategy_2.LocationStrategy, {useClass: path_location_strategy_2.PathLocationStrategy})), platform_location_2.PlatformLocation, location_2.Location, lang_1.CONST_EXPR(new core_2.Provider(router_2.Router, {
     useFactory: routerFactory,
