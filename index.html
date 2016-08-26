@@ -1,85 +1,70 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Ivanhoinacki.GitHub.io by ivanhoinacki</title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>ivanhoinacki | Frontend Engieener</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <base href=".">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900" type="text/css">
+        <link rel="canonical" href="http://ivanhoinacki.github.io/">
+        <meta name="google-site-verification" content="rgmpRA4Etxga2hr5Sih2W0ujlKeWEdsTedKFI95kc_U"/>
+        <link rel="stylesheet" href="vendor/normalize.css/normalize.css">
+        <link rel="stylesheet" href="app.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <main-app>
+            <svg width='46px' height='46px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ripple" style="position: absolute; left: 50%; top: 50%; bottom: 50%; right: 50%;">
+                <rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect>
+                <g>
+                    <animate attributeName="opacity" dur="2s" repeatCount="indefinite" begin="0s" keyTimes="0;0.33;1" values="1;1;0"></animate>
+                    <circle cx="50" cy="50" r="40" stroke="#afafb7" fill="none" stroke-width="6" stroke-linecap="round">
+                        <animate attributeName="r" dur="2s" repeatCount="indefinite" begin="0s" keyTimes="0;0.33;1" values="0;22;44"></animate>
+                    </circle>
+                </g>
+                <g>
+                    <animate attributeName="opacity" dur="2s" repeatCount="indefinite" begin="1s" keyTimes="0;0.33;1" values="1;1;0"></animate>
+                    <circle cx="50" cy="50" r="40" stroke="#a8a8a8" fill="none" stroke-width="6" stroke-linecap="round">
+                        <animate attributeName="r" dur="2s" repeatCount="indefinite" begin="1s" keyTimes="0;0.33;1" values="0;22;44"></animate>
+                    </circle>
+                </g>
+            </svg>
+        </main-app>
+        <script src="vendor/@angular/bundles/angular2-polyfills.js"></script>
+        <script src="vendor/systemjs/dist/system.src.js"></script>
+        <script src="vendor/rxjs/bundles/Rx.js"></script>
+        <script src="vendor/@angular/bundles/angular2.dev.js"></script>
+        <script src="vendor/@angular/bundles/http.dev.js"></script>
+        <script src="vendor/@angular/bundles/router.dev.js"></script>
+        <script src="vendor/js/jquery.min.js"></script>
+        <script src="vendor/js/typed.js"></script>
+        <script>
+            System.config({
+                packages: {
+                    'app': {
+                        main: 'main.js',
+                        defaultExtension: 'js'
+                    }
+                }
+            });
+            System.import ('app.js').then(null, console.error.bind(console));
+        </script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-52901652-1']);
+            _gaq.push(['_trackPageview']);
 
-  <body>
-    <div id="container">
-      <div class="inner">
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol
+                    ? 'https://ssl'
+                    : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
 
-        <header>
-          <h1>Ivanhoinacki.GitHub.io</h1>
-          <h2></h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/ivanhoinacki" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h1>
-<a id="ivanhoinackigithubio" class="anchor" href="#ivanhoinackigithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ivanhoinacki.github.io</h1>
-
-<blockquote>
-<p>My Personal Web site custom with Angular2</p>
-</blockquote>
-
-<h1>
-<a id="prepare" class="anchor" href="#prepare" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prepare</h1>
-
-<blockquote>
-<p>npm install</p>
-</blockquote>
-
-<p><code>node_modules</code> and <code>typings</code> directories should be created during the install.</p>
-
-<p>Build the project:</p>
-
-<blockquote>
-<p>npm run clean &amp; npm run build</p>
-</blockquote>
-
-<h1>
-<a id="inspired" class="anchor" href="#inspired" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inspired</h1>
-
-<h2>
-<a id="angular-2-quickstart-source" class="anchor" href="#angular-2-quickstart-source" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Angular 2 QuickStart Source</h2>
-
-<p>This repository holds the TypeScript source code of the <a href="https://angular.io/docs/ts/latest/quickstart.html">angular.io quickstart</a>,
-the foundation for most of the documentation samples and potentially a good starting point for your application.</p>
-
-<p>It's been extended with testing support so you can start writing tests immediately.</p>
-
-<p><strong>This is not the perfect arrangement for your application. It is not designed for production.
-It exists primarily to get you started quickly with learning and prototyping in Angular 2</strong></p>
-
-<p>We are unlikely to accept suggestions about how to grow this QuickStart into something it is not.
-Please keep that in mind before posting issues and PRs.</p>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
-
-<p><a href="http://ivanhoinacki.mit-license.org/">MIT License</a> © Ivan Hoinacki</p>
-        </section>
-
-        <footer>
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
