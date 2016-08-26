@@ -24,8 +24,6 @@ import { ResumeCmp      } from './components/resume/comp.resume';
 
 export class AppComponent implements OnInit {
 
-   constructor() { }
-
     public onClickOverlay() {
         $('#toggle').toggleClass('active');
         $('#overlay').toggleClass('open');
