@@ -55,7 +55,7 @@ gulp.task("libs", () => {
             'rxjs/**',
             'zone.js/dist/**',
             '@angular/**'
-        ], {cwd: "vendor/**"}) /* Glob required here. */
+        ], {cwd: "node_modules/**"}) /* Glob required here. */
         .pipe(gulp.dest("build/lib"));
 });
 

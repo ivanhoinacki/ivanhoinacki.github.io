@@ -1,15 +1,15 @@
-import {provide, enableProdMode} from '@angular/core';
-import {bootstrap} from '@angular/platform/browser';
-import {
-  ROUTER_PROVIDERS,
-  HashLocationStrategy,
-  LocationStrategy
-} from '@angular/router';
+/* Avoid: 'error TS2304: Cannot find name <type>' during compilation */
+///<reference path="../typings/index.d.ts"/>
 
-import {MainApp} from './app/main';
+import {bootstrap} from "@angular/platform-browser-dynamic";
+import {provide, enableProdMode} from "@angular/core";
+import {LocationStrategy, HashLocationStrategy} from "@angular/common";
+import {ROUTER_PROVIDERS} from "@angular/router-deprecated";
+
+import {IvanhoinackiApp} from './app/main';
 
 enableProdMode();
 
-bootstrap(MainApp, [
+bootstrap(IvanhoinackiApp, [
   ROUTER_PROVIDERS, provide(LocationStrategy, { useClass: HashLocationStrategy })
 ]);

@@ -1,6 +1,5 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 
-
 @Component({
     selector: 'home',
     templateUrl: 'app/components/home/home.html',
@@ -13,13 +12,13 @@ import {Component, OnInit, OnDestroy} from '@angular/core';
 export class HomeCmp implements OnInit, OnDestroy {
 
     ngOnInit() {
-        $('.description').typed({
-            strings: [
-                'web deev..', 'Frontend Engineer ;)'
-            ],
-            backDelay: 300,
-            typeSpeed: 30
-        });
+        // $('.description').typed({
+        //     strings: [
+        //         'web deev..', 'Frontend Engineer ;)'
+        //     ],
+        //     backDelay: 300,
+        //     typeSpeed: 30
+        // });
     }
 
     ngOnDestroy() { }
