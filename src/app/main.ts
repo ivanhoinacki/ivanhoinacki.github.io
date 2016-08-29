@@ -6,7 +6,7 @@ import {ResumeCmp} from './components/resume/resume';
 
 
 @Component({
-    selector: 'main-app',
+    selector: 'ivanhoinacki',
     providers: [],
     templateUrl: 'app/main.html',
     styleUrls: ['app/main.css'],
@@ -19,7 +19,7 @@ import {ResumeCmp} from './components/resume/resume';
     new Route({ path: '/resume', component: ResumeCmp, name: 'Resume' })
 ])
 
-export class MainApp implements OnInit {
+export class IvanhoinackiApp implements OnInit {
 
     public onClickOverlay() {
         $('#toggle').toggleClass('active');
