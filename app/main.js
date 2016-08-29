@@ -11,7 +11,7 @@ System.register(['@angular/core', '@angular/router', './components/home/home', '
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1, router_1, home_1, resume_1;
-    var MainApp;
+    var IvanhoinackiApp;
     return {
         setters:[
             function (core_1_1) {
@@ -27,14 +27,14 @@ System.register(['@angular/core', '@angular/router', './components/home/home', '
                 resume_1 = resume_1_1;
             }],
         execute: function() {
-            MainApp = (function () {
-                function MainApp() {
+            IvanhoinackiApp = (function () {
+                function IvanhoinackiApp() {
                 }
-                MainApp.prototype.onClickOverlay = function () {
+                IvanhoinackiApp.prototype.onClickOverlay = function () {
                     $('#toggle').toggleClass('active');
                     $('#overlay').toggleClass('open');
                 };
-                MainApp.prototype.ngOnInit = function () {
+                IvanhoinackiApp.prototype.ngOnInit = function () {
                     $('.description').typed({
                         strings: [
                             'web deev..', 'Frontend Engineer ;)'
@@ -44,9 +44,9 @@ System.register(['@angular/core', '@angular/router', './components/home/home', '
                     });
                     console.log("@ivanhoinacki initialized...");
                 };
-                MainApp = __decorate([
+                IvanhoinackiApp = __decorate([
                     core_1.Component({
-                        selector: 'main-app',
+                        selector: 'ivanhoinacki',
                         providers: [],
                         templateUrl: 'app/main.html',
                         styleUrls: ['app/main.css'],
@@ -58,10 +58,10 @@ System.register(['@angular/core', '@angular/router', './components/home/home', '
                         new router_1.Route({ path: '/resume', component: resume_1.ResumeCmp, name: 'Resume' })
                     ]), 
                     __metadata('design:paramtypes', [])
-                ], MainApp);
-                return MainApp;
+                ], IvanhoinackiApp);
+                return IvanhoinackiApp;
             }());
-            exports_1("MainApp", MainApp);
+            exports_1("IvanhoinackiApp", IvanhoinackiApp);
         }
     }
 });

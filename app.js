@@ -1,3 +1,5 @@
+/* Avoid: 'error TS2304: Cannot find name <type>' during compilation */
+///<reference path="../typings/index.d.ts"/>
 System.register(['@angular/core', '@angular/platform/browser', '@angular/router', './app/main'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
@@ -18,7 +20,7 @@ System.register(['@angular/core', '@angular/platform/browser', '@angular/router'
             }],
         execute: function() {
             core_1.enableProdMode();
-            browser_1.bootstrap(main_1.MainApp, [
+            browser_1.bootstrap(main_1.IvanhoinackiApp, [
                 router_1.ROUTER_PROVIDERS, core_1.provide(router_1.LocationStrategy, { useClass: router_1.HashLocationStrategy })
             ]);
         }
