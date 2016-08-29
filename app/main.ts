@@ -1,40 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {RouteConfig, Route, ROUTER_DIRECTIVES, OnActivate} from '@angular/router';
+/* Avoid: 'error TS2304: Cannot find name <type>' during compilation */
+///<reference path="../../typings/index.d.ts"/>
 
-import {HomeCmp} from './components/home/home';
-import {ResumeCmp} from './components/resume/resume';
+import {IvanhoinackiApp} from "./app.component";
+import {bootstrap} from "@angular/platform-browser-dynamic";
+import {provide, enableProdMode} from "@angular/core";
+import {LocationStrategy, HashLocationStrategy} from "@angular/common";
+import {ROUTER_PROVIDERS} from "@angular/router-deprecated";
 
+enableProdMode();
 
-@Component({
-    selector: 'main-app',
-    providers: [],
-    templateUrl: 'app/main.html',
-    styleUrls: ['app/main.css'],
-    directives: [ROUTER_DIRECTIVES],
-    pipes: []
-})
-
-@RouteConfig([
-    new Route({ path: '/', component: HomeCmp, name: 'HomeCmp' }),
-    new Route({ path: '/resume', component: ResumeCmp, name: 'Resume' })
-])
-
-export class MainApp implements OnInit {
-
-    public onClickOverlay() {
-        $('#toggle').toggleClass('active');
-        $('#overlay').toggleClass('open');
-    }
-
-    ngOnInit() {
-        $('.description').typed({
-            strings: [
-                'web deev..', 'Frontend Engineer ;)'
-            ],
-            backDelay: 300,
-            typeSpeed: 30
-        });
-        console.log("@ivanhoinacki initialized...");
-    }
-
-}
+bootstrap(IvanhoinackiApp, [
+    ROUTER_PROVIDERS,
+    provide(LocationStrategy, {useClass: HashLocationStrategy})
+]);
