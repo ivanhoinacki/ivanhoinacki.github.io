@@ -11,29 +11,32 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var ResumeCmp;
+    var IconsComp;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            ResumeCmp = (function () {
-                function ResumeCmp() {
+            IconsComp = (function () {
+                function IconsComp() {
                 }
-                ResumeCmp = __decorate([
+                IconsComp = __decorate([
                     core_1.Component({
-                        selector: 'resume',
-                        templateUrl: 'app/components/resume/resume.html',
-                        styleUrls: ['app/components/resume/resume.css']
+                        selector: 'icons',
+                        templateUrl: 'app/components/icons/icons.html',
+                        styleUrls: ['app/components/icons/icons.css'],
+                        providers: [],
+                        directives: [],
+                        pipes: []
                     }), 
                     __metadata('design:paramtypes', [])
-                ], ResumeCmp);
-                return ResumeCmp;
+                ], IconsComp);
+                return IconsComp;
             }());
-            exports_1("ResumeCmp", ResumeCmp);
+            exports_1("IconsComp", IconsComp);
         }
     }
 });
 
-//# sourceMappingURL=resume.js.map
+//# sourceMappingURL=icons.comp.js.map

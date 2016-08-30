@@ -11,42 +11,29 @@ System.register(['@angular/core'], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var HomeCmp;
+    var ResumeCmp;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            HomeCmp = (function () {
-                function HomeCmp() {
+            ResumeCmp = (function () {
+                function ResumeCmp() {
                 }
-                HomeCmp.prototype.ngOnInit = function () {
-                    $('.description').typed({
-                        strings: [
-                            'web deev..', 'Frontend Engineer ;)'
-                        ],
-                        backDelay: 300,
-                        typeSpeed: 30
-                    });
-                };
-                HomeCmp.prototype.ngOnDestroy = function () { };
-                HomeCmp = __decorate([
+                ResumeCmp = __decorate([
                     core_1.Component({
-                        selector: 'home',
-                        templateUrl: 'app/components/home/home.html',
-                        styleUrls: ['app/components/home/home.css'],
-                        providers: [],
-                        directives: [],
-                        pipes: []
+                        selector: 'resume',
+                        templateUrl: 'app/components/resume/resume.html',
+                        styleUrls: ['app/components/resume/resume.css']
                     }), 
                     __metadata('design:paramtypes', [])
-                ], HomeCmp);
-                return HomeCmp;
+                ], ResumeCmp);
+                return ResumeCmp;
             }());
-            exports_1("HomeCmp", HomeCmp);
+            exports_1("ResumeCmp", ResumeCmp);
         }
     }
 });
 
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=resume.comp.js.map
