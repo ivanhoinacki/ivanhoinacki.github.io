@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {RouteConfig, Route, ROUTER_DIRECTIVES, OnActivate} from '@angular/router';
 
-import {HomeCmp} from './components/home/home';
-import {ResumeCmp} from './components/resume/resume';
+import {HomeCmp} from './components/home/home.comp';
+import {ResumeCmp} from './components/resume/resume.comp';
 
 
 @Component({
