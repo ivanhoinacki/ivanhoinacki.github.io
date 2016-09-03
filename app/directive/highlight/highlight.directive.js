@@ -24,16 +24,13 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                     this.renderer = renderer;
                 }
                 HighlightDirective.prototype.onMouseEnter = function () {
-                    this.highlight('#fff');
+                    this.highlight('#525151');
                 };
                 HighlightDirective.prototype.onMouseLeave = function () {
                     this.highlight('#000000');
                 };
                 HighlightDirective.prototype.highlight = function (color) {
-                    // this.renderer.setElementStyle(this.el.nativeElement, 'fill', color);
-                    // console.log(this.renderer);
-                    // this.renderer.setElementClass(this.renderer.se)
-                    this.el.nativeElement.setElementStyle('fill', color);
+                    this.el.nativeElement.style.fill = color;
                 };
                 __decorate([
                     core_1.HostListener('mouseenter'), 
@@ -51,9 +48,10 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                     core_1.Directive({
                         selector: '[highlight]'
                     }), 
-                    __metadata('design:paramtypes', [core_1.ElementRef, core_1.Renderer])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof core_1.ElementRef !== 'undefined' && core_1.ElementRef) === 'function' && _a) || Object, (typeof (_b = typeof core_1.Renderer !== 'undefined' && core_1.Renderer) === 'function' && _b) || Object])
                 ], HighlightDirective);
                 return HighlightDirective;
+                var _a, _b;
             }());
             exports_1("HighlightDirective", HighlightDirective);
         }

@@ -9,7 +9,7 @@ export class HighlightDirective {
   constructor(private el: ElementRef, private renderer: Renderer) { }
 
   @HostListener('mouseenter') onMouseEnter() {
-    this.highlight('#fff');
+    this.highlight('#f4f4f4');
   }
 
   @HostListener('mouseleave') onMouseLeave() {
@@ -17,10 +17,6 @@ export class HighlightDirective {
   }
 
   private highlight(color: string) {
-    // this.renderer.setElementStyle(this.el.nativeElement, 'fill', color);
-    // console.log(this.renderer);
-    // this.renderer.setElementClass(this.renderer.se)
-    this.el.nativeElement.setElementStyle('fill', color);
+    this.el.nativeElement.style.fill = color;
   }
-
 }
