@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bensternthal/kb.js.svg?branch=master)](https://travis-ci.org/bensternthal/kb.js)
+
 # ivanhoinacki.github.io
 > My Personal Web site custom with Angular2
 
