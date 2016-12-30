@@ -79,6 +79,10 @@ a:hover {
   #typed-cursor, .description {
     display: none;
   }
+  .name-ivan{
+      font-size: 10px;
+      font-weight: 300;
+  }
 }
 
 #typed-cursor {

@@ -14,3 +14,4 @@ npm-debug.log
 !systemjs.config.js
 !typings/typings.d.ts
 !wallaby.js
+src 
