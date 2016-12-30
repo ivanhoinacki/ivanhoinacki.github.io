@@ -76,12 +76,11 @@ a:hover {
 }
 
 @media screen and (max-width: 400px) {
-  #typed-cursor, .description {
-    display: none;
+  .name-ivan {
+    font-size: 10px;
   }
-  .name-ivan{
-      font-size: 10px;
-      font-weight: 300;
+  .site-header span {
+    margin: auto 0px auto 5%;
   }
 }
 
