@@ -1,0 +1,47 @@
+#notfound {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .notfound {
+      max-width: 640px;
+      width: 100%;
+      line-height: 1.1;
+      display: flex;
+      h1 {
+          color: #151723;
+      }
+      h2 {
+          color: #151723;
+      }
+      p {
+          color: #999fa5;
+          font-weight: 400;
+      }
+      a {
+          color: #388dbc;
+      }
+      .notfound-404 {
+          width: 140px;
+          height: 140px;
+          background-image: url(../../../assets/images/emoji.png);
+          background-size: cover;
+      }
+      .texts-notfound {
+          width: calc(100% - 140px);
+          padding: 0 16px;
+      }
+  }
+}
+@media (max-width: 640px) {
+  #notfound {
+      .notfound {
+          flex-wrap: wrap;
+          justify-content: center;
+          .texts-notfound {
+              width: 100%;
+              text-align: center;
+          }
+      }
+  }
+}

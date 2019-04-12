@@ -1,0 +1,36 @@
+
+
+  #phone{
+    font-size: 25px;
+    float: right!important;
+  }
+  * {
+    font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  body {
+    color: #555!important;
+    cursor: pointer;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .container a {
+    color: #337ab7!important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+@media print
+{
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
