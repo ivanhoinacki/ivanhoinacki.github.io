@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $ : any;
 
 @Component({
     selector: 'main',
@@ -10,7 +11,13 @@ export class MainComponent implements OnInit {
 
     constructor() {}
 
-    ngOnInit(): void {
-
+    ngOnInit() {
+        $('.description').typed({
+            strings: [
+                'web deev..', 'Web Project Coordinator ;)'
+            ],
+            backDelay: 300,
+            typeSpeed: 30
+        });
     }
 }

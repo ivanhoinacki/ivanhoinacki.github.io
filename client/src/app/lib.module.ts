@@ -9,7 +9,7 @@ import { DateAdapter as DateAdapterSaturn } from 'saturn-datepicker';
 import { MAT_MOMENT_DATE_FORMATS, MomentDateAdapter } from '@angular/material-moment-adapter';
 import localePr from '@angular/common/locales/pt';
 registerLocaleData(localePr);
-import { MaterialModule } from './lib/material.module';
+
 
 const NODE_MODULE = [
   CommonModule,
@@ -18,8 +18,7 @@ const NODE_MODULE = [
   TextMaskModule,
   CurrencyMaskModule,
   ReactiveFormsModule,
-  NgbModule,
-  MaterialModule
+  NgbModule
 ];
 
 import {

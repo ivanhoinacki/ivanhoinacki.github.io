@@ -4,6 +4,14 @@
     font-size: 25px;
     float: right!important;
   }
+
+  @media (max-width: 767.98px) {
+    #phone{
+        font-size: 12px;
+        float: right!important;
+      }
+  }
+
   * {
     font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
   }
@@ -34,3 +42,15 @@ h3 {
         display: none !important;
     }
 }
+
+@media print {
+    a[href]:after {
+      content: none !important;
+    }
+  }
+
+@media print {
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+  }
