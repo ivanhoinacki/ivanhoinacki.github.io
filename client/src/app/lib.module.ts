@@ -24,7 +24,7 @@ const NODE_MODULE = [
 import {
   IconsModule,
   SocialMediaModule
-} from './lib/components';
+} from './comp/components';
 
 const COMPONENTS = [
   IconsModule,
