@@ -1,56 +1,55 @@
+#phone {
+  font-size: 25px;
+  float: right !important;
+}
 
-
-  #phone{
-    font-size: 25px;
-    float: right!important;
+@media (max-width: 767.98px) {
+  #phone {
+    font-size: 16px;
+    float: right !important;
+    margin-top: -51px;
   }
+}
 
-  @media (max-width: 767.98px) {
-    #phone{
-        font-size: 12px;
-        float: right!important;
-      }
-  }
+* {
+  font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
+}
 
-  * {
-    font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
-  }
+body {
+  color: #555 !important;
+  cursor: pointer;
+}
 
-  body {
-    color: #555!important;
-    cursor: pointer;
-  }
+.hide {
+  display: none;
+}
 
-  .hide {
-    display: none;
-  }
-
-  .container a {
-    color: #337ab7!important;
-    text-decoration: none;
-    cursor: pointer;
+.container a {
+  color: #337ab7 !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h3 {
-    font-size: 24px;
-}
-
-@media print
-{
-    .no-print, .no-print *
-    {
-        display: none !important;
-    }
+  font-size: 24px;
 }
 
 @media print {
-    a[href]:after {
-      content: none !important;
-    }
+
+  .no-print,
+  .no-print * {
+    display: none !important;
   }
+}
 
 @media print {
-    a[href]:after {
-      content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: none !important;
   }
+}
+
+@media print {
+  a[href]:after {
+    content: " ("attr(href) ")";
+  }
+}

@@ -280,6 +280,15 @@
     }
   }
 
+  @media (max-width: 767.98px) {
+    .name-ivan {
+      font-size: 10px;
+    }
+    .site-header span {
+      margin: auto 0px auto 5%;
+    }
+  }
+
   #typed-cursor {
     font-size: 13px;
     padding-top: 9px;
