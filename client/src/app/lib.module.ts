@@ -2,7 +2,6 @@ import { ModuleWithProviders, NgModule, LOCALE_ID } from '@angular/core';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { TextMaskModule } from 'angular2-text-mask';
 import { SatDatepickerModule, MAT_DATE_LOCALE, MAT_DATE_FORMATS } from 'saturn-datepicker';
 import { DateAdapter as DateAdapterSaturn } from 'saturn-datepicker';
@@ -16,7 +15,6 @@ const NODE_MODULE = [
   FormsModule,
   SatDatepickerModule,
   TextMaskModule,
-  CurrencyMaskModule,
   ReactiveFormsModule,
   NgbModule
 ];
