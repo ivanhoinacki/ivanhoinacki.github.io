@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
-import { ResumeComponent } from './resume.component';
+import { ResumeComponentUS } from './resume.component-us'
 import { LibModule } from 'src/app/lib.module';
 
 const PAGES_COMPONENTS = [
-    ResumeComponent,
+    ResumeComponentUS,
 ];
 
 @NgModule({
@@ -15,5 +15,5 @@ const PAGES_COMPONENTS = [
     ...PAGES_COMPONENTS,
   ],
 })
-export class ResumeModule {
+export class ResumeModuleUS {
 }

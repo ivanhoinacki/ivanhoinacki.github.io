@@ -1,0 +1,104 @@
+@media print {
+    /* Garantir que a primeira página vá até a empresa "Senior Software Engineer" */
+    .first-page-break {
+        page-break-after: always;
+    }
+
+    /* Garantir que a segunda página termine após "Technical of Network and Internet" */
+    .second-page-break {
+        page-break-after: always;
+    }
+
+    /* Evitar que quebras de página sejam feitas dentro das descrições */
+    .no-page-break {
+        page-break-inside: avoid;
+    }
+}
+/* Estilos normais */
+#phone {
+    font-size: 25px;
+    float: right !important;
+}
+
+@media (max-width: 767.98px) {
+    #phone {
+        font-size: 16px;
+        float: right !important;
+        margin-top: -51px;
+    }
+}
+
+* {
+    font-family: "Maven Pro", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    color: #555 !important;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.container a {
+    color: #337ab7 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.content-list {
+    display: block;
+    text-align: left;
+}
+
+.content-list-item {
+    padding-top: 15px;
+}
+
+.content-item-title {
+    padding: 2px 12px;
+    border-left: solid 5px #02d27e; /* Cor de fundo */
+    font-weight: 900;
+}
+
+.content-courseList-courseName {
+    line-height: 1.29;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+/* Estilos para impressão */
+@media print {
+    body {
+        color: #000 !important; /* Cor preta para impressão */
+        background-color: #fff !important; /* Fundo branco para impressão */
+    }
+
+    /* Forçar cores para links */
+    .container a {
+        color: #337ab7 !important; /* Cores dos links mantidas */
+        text-decoration: none;
+    }
+
+    /* Elementos que não devem aparecer na impressão */
+    .no-print, .no-print * {
+        display: none !important;
+    }
+
+    /* Adicionar URL após o texto do link */
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    /* Manter bordas e cores nos títulos para impressão */
+    .content-item-title {
+        border-left: solid 5px #02d27e !important; /* Forçar a cor da borda */
+        font-weight: 900;
+        background-color: #f5f5f5 !important; /* Cor de fundo leve na impressão */
+    }
+}
