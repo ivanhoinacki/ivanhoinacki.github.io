@@ -90,10 +90,9 @@ h3 {
         display: none !important;
     }
 
-    /* Adicionar URL após o texto do link */
     a[href]:after {
-        content: " (" attr(href) ")";
-    }
+        content: none;
+      }
 
     /* Manter bordas e cores nos títulos para impressão */
     .content-item-title {
