@@ -5,7 +5,7 @@ import { PrivatePagesRoutingModule } from './privatePages-routing.module';
 import { LibModule } from 'src/app/lib.module';
 import { MainModule } from './main/main.module';
 import { ResumeModuleUS } from './resume-us/resume.module-us';
-// import { ResumeModulePT } from './resume-pt/resume.module-pt';
+import { ResumeModulePT } from './resume-pt/resume.module-pt';
 
 const PAGES_COMPONENTS = [
   PrivatePagesComponent,
@@ -16,8 +16,8 @@ const PAGES_COMPONENTS = [
     PrivatePagesRoutingModule,
     LibModule,
     MainModule,
-    ResumeModuleUS
-    // ResumeModulePT,
+    ResumeModuleUS,
+    ResumeModulePT,
   ],
   declarations: [
     ...PAGES_COMPONENTS,
