@@ -60,6 +60,17 @@ src/
 
 ---
 
+## Avisos de Depreciação do Sass
+
+> **Importante:**
+> O projeto utiliza Angular 7 e dependências legadas (ex: @angular/material, saturn-datepicker) que só suportam o novo padrão de módulos do Sass (`@use`, `@forward`) a partir do Angular 12+.
+>
+> Por isso, alguns avisos de depreciação do Sass (ex: uso de `@import`, funções antigas, divisões com `/`) podem aparecer durante o build. Esses avisos **não afetam o funcionamento** do projeto, mas só serão totalmente eliminados com a atualização do Angular e das dependências para versões mais recentes.
+>
+> **Recomendação:** Planeje a migração para Angular 12+ para garantir sustentabilidade e eliminar todos os avisos de depreciação.
+
+---
+
 ## Diagrama C4 (Container)
 ```plantuml
 @startuml

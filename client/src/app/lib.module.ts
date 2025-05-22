@@ -17,12 +17,13 @@ const NODE_MODULE = [
   TextMaskModule,
   ReactiveFormsModule,
   NgbModule
-];
+];  
 
 import {
   IconsModule,
   SocialMediaModule
 } from './comp/components';
+import { splitMatchedQueriesDsl } from '@angular/core/src/view/util';
 
 const COMPONENTS = [
   IconsModule,

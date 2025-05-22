@@ -74,6 +74,11 @@ h3 {
 
 /* Estilos para impressão */
 @media print {
+    #phone {
+        margin-top: 10px;
+        font-size: 25px;
+        float: right !important;
+    }
     body {
         color: #000 !important; /* Cor preta para impressão */
         background-color: #fff !important; /* Fundo branco para impressão */
