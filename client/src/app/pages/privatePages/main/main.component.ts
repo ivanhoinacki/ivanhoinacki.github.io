@@ -11,7 +11,7 @@ export class MainComponent implements OnInit {
 
     ngOnInit() {
         $(".description").typed({
-            strings: ["Senior Software Engineer Consultant...", "Full Lifecycle Management", "Technical Leadership", "Process Optimization", "Project Management", "Mentorship and Best Practices", "Architectural Leadership", "Workflow Organization", "Problem Solving", "Cross-functional Collaboration"],
+            strings: ["Senior Software Architect...", "GenAI & Cloud Microservices", "Azure AI • RAG • DevOps", "AWS", "Backend Specialist"],
             backDelay: 300,
             typeSpeed: 30
         });
