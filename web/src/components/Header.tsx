@@ -7,7 +7,7 @@ const navigation = [
   { label: "Expertise", href: "#expertise" },
   { label: "Experience", href: "#experience" },
   { label: "Work", href: "#work" },
-  { label: "Résumé", href: "#/resume-us" },
+  { label: "Resume", href: "#/resume-us" },
   { label: "Contact", href: "#contact" }
 ];
 

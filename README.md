@@ -1,6 +1,6 @@
 # ivanhoinacki.github.io
 
-Personal portfolio and résumé website for Ivan Hoinacki.
+Personal portfolio and resume website for Ivan Hoinacki.
 
 ## Stack
 
@@ -39,11 +39,11 @@ npm audit
 ## Routes
 
 - `/#home` — portfolio home
-- `/#/resume-us` — default English résumé
-- `/#/resume-en` — English résumé alias
+- `/#/resume-us` — default English resume
+- `/#/resume-en` — English resume alias
 - `/#/resume-pt` — currículo em português
 
-PDF versions are available from both résumé pages.
+PDF versions are available from both resume pages.
 
 ## Deployment
 

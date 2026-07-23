@@ -87,7 +87,7 @@ const aluraCertificatesPt: ResumeLink[] = [
 ];
 
 export const resumeEn: ResumeContent = {
-  documentLabel: "English résumé",
+  documentLabel: "English resume",
   homeLabel: "Home",
   themeLabels: {
     dark: "Switch to dark theme",

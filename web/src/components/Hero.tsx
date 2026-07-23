@@ -72,7 +72,7 @@ export function Hero() {
             </a>
             <a className="button button-secondary" href="#/resume-us">
               <FileText size={19} aria-hidden="true" />
-              View résumé
+              View resume
             </a>
           </div>
 
