@@ -7,7 +7,7 @@ Personal portfolio and résumé website for Ivan Hoinacki.
 - React 18
 - TypeScript
 - Vite
-- CSS with responsive light/dark themes
+- CSS with responsive light/dark themes and dark mode by default
 - GitHub Pages
 
 The application lives in [`web/`](web/). The previous Angular application was removed after the React migration.
@@ -39,7 +39,7 @@ npm audit
 ## Routes
 
 - `/#home` — portfolio home
-- `/#/resume-us` — English résumé
+- `/#/resume-us` — default English résumé
 - `/#/resume-en` — English résumé alias
 - `/#/resume-pt` — currículo em português
 
