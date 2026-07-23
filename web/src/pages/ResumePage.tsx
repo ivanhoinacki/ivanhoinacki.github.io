@@ -121,7 +121,7 @@ export function ResumePage({
         <div className="content-boundary resume-toolbar-content">
           <a className="resume-back-link" href="#home">
             <ArrowLeft size={18} aria-hidden="true" />
-            Home
+            {content.homeLabel}
           </a>
           <div className="resume-toolbar-actions">
             <a className="resume-language-link" href={alternateHref}>
@@ -130,7 +130,7 @@ export function ResumePage({
             <button
               className="icon-button"
               type="button"
-              aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
+              aria-label={theme === "light" ? content.themeLabels.dark : content.themeLabels.light}
               onClick={onToggleTheme}
             >
               {theme === "light" ? <Moon size={19} /> : <Sun size={19} />}

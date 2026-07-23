@@ -7,7 +7,7 @@
       name="description"
       content="Ivan Hoinacki is a Senior Software Engineer focused on backend platforms, cloud-native systems, travel technology, and AI-assisted engineering."
     />
-    <meta name="theme-color" content="#f8fafc" />
+    <meta name="theme-color" content="#090e1a" />
     <meta property="og:title" content="Ivan Hoinacki · Senior Software Engineer" />
     <meta
       property="og:description"
@@ -17,6 +17,10 @@
     <meta property="og:url" content="https://ivanhoinacki.github.io/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Ivan Hoinacki · Senior Software Engineer</title>
+    <script>
+      const storedTheme = localStorage.getItem("portfolio-theme");
+      document.documentElement.dataset.theme = storedTheme === "light" ? "light" : "dark";
+    </script>
   </head>
   <body>
     <div id="root"></div>

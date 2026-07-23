@@ -17,7 +17,7 @@ function getInitialTheme(): Theme {
     return storedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "dark";
 }
 
 export default function App() {
@@ -27,7 +27,26 @@ export default function App() {
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem("portfolio-theme", theme);
+
+    const themeColor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+    themeColor?.setAttribute("content", theme === "dark" ? "#090e1a" : "#f8fafc");
   }, [theme]);
+
+  useEffect(() => {
+    const isPortuguese = route === "#/resume-pt";
+    document.documentElement.lang = isPortuguese ? "pt-BR" : "en";
+    document.title = isPortuguese
+      ? "Ivan Hoinacki · Engenheiro de Software Sênior"
+      : "Ivan Hoinacki · Senior Software Engineer";
+
+    const description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
+    description?.setAttribute(
+      "content",
+      isPortuguese
+        ? "Ivan Hoinacki é Engenheiro de Software Sênior com foco em plataformas de backend, sistemas nativos de nuvem, tecnologia para turismo e engenharia assistida por IA."
+        : "Ivan Hoinacki is a Senior Software Engineer focused on backend platforms, cloud-native systems, travel technology, and AI-assisted engineering."
+    );
+  }, [route]);
 
   useEffect(() => {
     const handleHashChange = () => {
@@ -60,7 +79,7 @@ export default function App() {
       <ResumePage
         content={resumePt}
         alternateHref="#/resume-us"
-        alternateLabel="English"
+        alternateLabel="Inglês"
         theme={theme}
         onToggleTheme={toggleTheme}
       />
