@@ -105,7 +105,7 @@ export function Hero() {
           <div className="portrait-glow" aria-hidden="true" />
           <div className="portrait-frame">
             <img
-              src="/ivan-hoinacki.jpeg"
+              src="/ivan.jpg"
               alt="Ivan Hoinacki"
             />
           </div>

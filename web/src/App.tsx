@@ -51,12 +51,25 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       setRoute(window.location.hash);
-      window.scrollTo({ top: 0 });
     };
 
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
+
+  useEffect(() => {
+    const animationFrame = window.requestAnimationFrame(() => {
+      if (!route || route.startsWith("#/")) {
+        window.scrollTo({ top: 0 });
+        return;
+      }
+
+      const target = document.getElementById(route.slice(1));
+      target?.scrollIntoView({ block: "start" });
+    });
+
+    return () => window.cancelAnimationFrame(animationFrame);
+  }, [route]);
 
   const toggleTheme = () => {
     setTheme((current) => (current === "light" ? "dark" : "light"));

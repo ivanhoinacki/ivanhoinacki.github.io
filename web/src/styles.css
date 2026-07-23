@@ -404,11 +404,9 @@ h3,
   position: relative;
   width: clamp(300px, 34vw, 430px);
   aspect-ratio: 1;
-  padding: 8px;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--border));
+  border: 2px solid color-mix(in srgb, var(--primary) 38%, var(--border));
   border-radius: 50%;
-  background: linear-gradient(145deg, var(--surface-solid), var(--primary-soft));
   box-shadow: var(--shadow);
 }
 
@@ -1203,7 +1201,7 @@ h3,
   }
 
   .portrait-frame {
-    width: min(78vw, 340px);
+    width: min(64vw, 280px);
   }
 
   .portrait-status {
