@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
@@ -26,28 +29,35 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 20
           cache: npm
-          cache-dependency-path: client/package-lock.json
+          cache-dependency-path: web/package-lock.json
 
       - name: Install dependencies
-        working-directory: client
+        working-directory: web
         run: npm ci
 
+      - name: Type check
+        working-directory: web
+        run: npm run typecheck
+
       - name: Build site
-        working-directory: client
-        run: npx ng build --prod
+        working-directory: web
+        run: npm run build
 
       - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Upload GitHub Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4
         with:
-          path: client/dist/ivanhoinacki
+          path: web/dist
 
   deploy:
     needs: build
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

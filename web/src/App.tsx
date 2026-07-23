@@ -5,6 +5,8 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
+import { ResumePage } from "./pages/ResumePage";
+import { resumeEn, resumePt } from "./pages/resume-content";
 
 export type Theme = "light" | "dark";
 
@@ -20,17 +22,56 @@ function getInitialTheme(): Theme {
 
 export default function App() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  const [route, setRoute] = useState(window.location.hash);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem("portfolio-theme", theme);
   }, [theme]);
 
+  useEffect(() => {
+    const handleHashChange = () => {
+      setRoute(window.location.hash);
+      window.scrollTo({ top: 0 });
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme((current) => (current === "light" ? "dark" : "light"));
+  };
+
+  if (route === "#/resume-us" || route === "#/resume-en") {
+    return (
+      <ResumePage
+        content={resumeEn}
+        alternateHref="#/resume-pt"
+        alternateLabel="Português"
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
+    );
+  }
+
+  if (route === "#/resume-pt") {
+    return (
+      <ResumePage
+        content={resumePt}
+        alternateHref="#/resume-us"
+        alternateLabel="English"
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
+    );
+  }
+
   return (
     <div className="site-shell">
       <Header
         theme={theme}
-        onToggleTheme={() => setTheme((current) => (current === "light" ? "dark" : "light"))}
+        onToggleTheme={toggleTheme}
       />
       <main>
         <Hero />

@@ -1,6 +1,7 @@
 import {
   ArrowDown,
   CalendarDays,
+  FileText,
   Github,
   Linkedin,
   Mail,
@@ -69,8 +70,9 @@ export function Hero() {
               <CalendarDays size={19} aria-hidden="true" />
               Schedule a conversation
             </a>
-            <a className="button button-secondary" href="#work">
-              Explore my work
+            <a className="button button-secondary" href="#/resume-us">
+              <FileText size={19} aria-hidden="true" />
+              View résumé
             </a>
           </div>
 
