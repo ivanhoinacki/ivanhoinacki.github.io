@@ -1,5 +1,3 @@
-@import "~@ng-select/ng-select/themes/material.theme.css";
-@import '~saturn-datepicker/theming';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 @import '../node_modules/@angular/material/theming';
 
@@ -42,7 +40,6 @@ $custom-theme-warn: mat-palette($mat-red);
 
 $custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
 
-@include sat-datepicker-theme($custom-theme);
 @include angular-material-theme($custom-theme);
 
 .backgroud-primary {
@@ -89,16 +86,6 @@ $custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $cus
     background-color: rgba(255, 111, 0, 0.50);
 }
 
-.ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected,
-.ng-select.ng-select-focused .ng-select-container .ng-value-container .ng-placeholder {
-    color: mat-color($custom-theme-primary, lighter) !important;
-}
-.ng-select.ng-select-focused .ng-select-container:after {
-    border-color: mat-color($custom-theme-primary, darker) !important
-}
-.ng-select.ng-select-focused .ng-select-container .ng-arrow-wrapper .ng-arrow {
-    color: mat-color($custom-theme-primary, darker) !important
-}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

@@ -41,9 +41,8 @@ src/
 
 ## Arquitetura (Resumo)
 - **Angular 7**: SPA modular, componentes e serviços.
-- **Electron**: Empacotamento desktop via `ngx-electron@1.0.4`.
 - **Sass**: Temas customizados, integração com Angular Material.
-- **Dependências legadas**: Bootstrap 4, jQuery, Moment.js, etc.
+- **Dependências legadas**: Bootstrap 4, jQuery e Angular Material 7.
 
 ### Pontos de atenção
 - Stack legado: Angular 7 está fora de suporte oficial.
@@ -63,7 +62,7 @@ src/
 ## Avisos de Depreciação do Sass
 
 > **Importante:**
-> O projeto utiliza Angular 7 e dependências legadas (ex: @angular/material, saturn-datepicker) que só suportam o novo padrão de módulos do Sass (`@use`, `@forward`) a partir do Angular 12+.
+> O projeto utiliza Angular 7 e Angular Material 7, que só suportam o novo padrão de módulos do Sass (`@use`, `@forward`) em versões mais recentes do framework.
 >
 > Por isso, alguns avisos de depreciação do Sass (ex: uso de `@import`, funções antigas, divisões com `/`) podem aparecer durante o build. Esses avisos **não afetam o funcionamento** do projeto, mas só serão totalmente eliminados com a atualização do Angular e das dependências para versões mais recentes.
 >
@@ -75,13 +74,11 @@ src/
 ```plantuml
 @startuml
 Person(dev, "Desenvolvedor")
-System_Boundary(s1, "SPA Angular/Electron") {
+System_Boundary(s1, "SPA Angular") {
   Container(web, "Frontend Angular", "Angular 7", "Interface do usuário, lógica de apresentação")
-  Container(electron, "Electron", "Node.js/Electron", "Empacotamento desktop, acesso a APIs nativas")
   ContainerDb(api, "APIs Externas", "REST/GraphQL", "Integração com serviços externos (opcional)")
 }
 Rel(dev, web, "Desenvolve e mantém")
-Rel(web, electron, "Executa dentro de")
 Rel(web, api, "Consome dados de", "HTTP/HTTPS")
 @enduml
 ```
