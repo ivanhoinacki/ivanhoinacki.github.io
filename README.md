@@ -1,89 +1,56 @@
-# ivanhoinacki (Angular 7 + Electron)
+# ivanhoinacki.github.io
 
-## Visão Geral
-SPA desenvolvida em Angular 7, com integração para desktop via Electron. Estrutura modular, componentes reutilizáveis e páginas públicas/privadas.
+Personal portfolio and résumé website for Ivan Hoinacki.
 
----
+## Stack
 
-## Como rodar o projeto
+- React 18
+- TypeScript
+- Vite
+- CSS with responsive light/dark themes
+- GitHub Pages
 
-### 1. Pré-requisitos
-- **Node.js 16.x** (use [nvm](https://github.com/nvm-sh/nvm) para gerenciar versões)
-- **npm 8.x**
+The application lives in [`web/`](web/). The previous Angular application was removed after the React migration.
 
-### 2. Instalação
+## Local development
+
+Requirements:
+
+- Node.js 20
+- npm 10+
+
 ```sh
-nvm install 16
-nvm use 16
-cd client
-npm install
+cd web
+npm ci
+npm run dev
 ```
 
-### 3. Rodando em modo desenvolvimento
+Open [http://localhost:5173](http://localhost:5173).
+
+## Validation
+
 ```sh
-npx ng serve -o
-```
-Acesse: [http://localhost:4200](http://localhost:4200)
-
----
-
-## Estrutura de Pastas
-```
-src/
-  app/
-    comp/components/         # Componentes reutilizáveis
-    pages/                   # Páginas (notFound, privatePages, resume-pt, resume-us, main)
-  assets/                    # Imagens, libs, fontes
-  environments/              # Configurações de ambiente
+cd web
+npm run typecheck
+npm run build
+npm audit
 ```
 
----
+## Routes
 
-## Arquitetura (Resumo)
-- **Angular 7**: SPA modular, componentes e serviços.
-- **Sass**: Temas customizados, integração com Angular Material.
-- **Dependências legadas**: Bootstrap 4, jQuery e Angular Material 7.
+- `/#home` — portfolio home
+- `/#/resume-us` — English résumé
+- `/#/resume-en` — English résumé alias
+- `/#/resume-pt` — currículo em português
 
-### Pontos de atenção
-- Stack legado: Angular 7 está fora de suporte oficial.
-- Dependências desatualizadas: vulnerabilidades conhecidas.
-- Avisos de depreciação do Sass: não afetam o funcionamento imediato.
+PDF versions are available from both résumé pages.
 
----
+## Deployment
 
-## Recomendações de Governança
-- Planejar atualização do Angular para versão LTS.
-- Revisar e atualizar dependências críticas.
-- Automatizar testes e CI/CD.
-- Documentar fluxos críticos e regras de negócio.
+Pushes to `master` trigger [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which:
 
----
+1. installs dependencies with Node.js 20;
+2. runs type checking and a production build;
+3. publishes `web/dist` to GitHub Pages.
 
-## Avisos de Depreciação do Sass
-
-> **Importante:**
-> O projeto utiliza Angular 7 e Angular Material 7, que só suportam o novo padrão de módulos do Sass (`@use`, `@forward`) em versões mais recentes do framework.
->
-> Por isso, alguns avisos de depreciação do Sass (ex: uso de `@import`, funções antigas, divisões com `/`) podem aparecer durante o build. Esses avisos **não afetam o funcionamento** do projeto, mas só serão totalmente eliminados com a atualização do Angular e das dependências para versões mais recentes.
->
-> **Recomendação:** Planeje a migração para Angular 12+ para garantir sustentabilidade e eliminar todos os avisos de depreciação.
-
----
-
-## Diagrama C4 (Container)
-```plantuml
-@startuml
-Person(dev, "Desenvolvedor")
-System_Boundary(s1, "SPA Angular") {
-  Container(web, "Frontend Angular", "Angular 7", "Interface do usuário, lógica de apresentação")
-  ContainerDb(api, "APIs Externas", "REST/GraphQL", "Integração com serviços externos (opcional)")
-}
-Rel(dev, web, "Desenvolve e mantém")
-Rel(web, api, "Consome dados de", "HTTP/HTTPS")
-@enduml
-```
-
----
-
-## Contato
-Dúvidas técnicas, sugestões ou melhorias: abra uma issue ou entre em contato com o mantenedor. 
+Pull requests run the same build checks without deploying.
