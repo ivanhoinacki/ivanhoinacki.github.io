@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { trackPageView } from "./analytics";
 import { Contact } from "./components/Contact";
 import { Experience } from "./components/Experience";
 import { Header } from "./components/Header";
@@ -20,9 +21,22 @@ function getInitialTheme(): Theme {
   return "light";
 }
 
+function getAnalyticsPath(route: string) {
+  if (route === "#/resume-us" || route === "#/resume-en") {
+    return "/resume-us";
+  }
+
+  if (route === "#/resume-pt") {
+    return "/resume-pt";
+  }
+
+  return "/";
+}
+
 export default function App() {
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
   const [route, setRoute] = useState(window.location.hash);
+  const analyticsPath = getAnalyticsPath(route);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -47,6 +61,10 @@ export default function App() {
         : "Ivan Hoinacki is a Senior Software Engineer focused on backend platforms, cloud-native systems, travel technology, and AI-assisted engineering."
     );
   }, [route]);
+
+  useEffect(() => {
+    trackPageView(analyticsPath);
+  }, [analyticsPath]);
 
   useEffect(() => {
     const handleHashChange = () => {
