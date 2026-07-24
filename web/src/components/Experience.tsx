@@ -4,10 +4,10 @@ const experience = [
   {
     role: "Senior Software Engineer",
     company: "Luxury Escapes",
-    period: "2026",
+    period: "2026 – Present",
     location: "Remote · Australia",
     summary:
-      "Built travel technology across provider integrations, booking flows, search and discovery, operational reliability, and AI-powered attraction curation.",
+      "Building travel technology across provider integrations, booking flows, search and discovery, operational reliability, and AI-powered attraction curation.",
     technologies: ["TypeScript", "Node.js", "NestJS", "PostgreSQL", "AWS", "Datadog", "GenAI"]
   },
   {

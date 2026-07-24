@@ -140,7 +140,7 @@ export const resumeEn: ResumeContent = {
   ],
   summary: [
     "Senior Software Engineer and Software Architect with 15+ years of experience building backend platforms, distributed systems, cloud-native services, and product integrations across travel, e-commerce, retail, banking, ERP, and industrial automation.",
-    "Most recently worked at Luxury Escapes in the Experiences vertical, building travel technology around provider integrations, booking flows, AI-powered attraction curation, search/discovery, analytics, and operational reliability. Strong hands-on background in TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, AWS, Azure, Kubernetes, Terraform, CI/CD, Datadog, OpenTelemetry, and GenAI/RAG.",
+    "Currently working at Luxury Escapes in the Experiences vertical, building travel technology around provider integrations, booking flows, AI-powered attraction curation, search/discovery, analytics, and operational reliability. Strong hands-on background in TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, AWS, Azure, Kubernetes, Terraform, CI/CD, Datadog, OpenTelemetry, and GenAI/RAG.",
     "I work well in remote international teams, own ambiguous technical problems end to end, and combine production engineering with architecture, mentoring, code review, and cross-functional product delivery. AI-assisted development is my daily practice: Claude-based coding agents, spec-driven development, context engineering, and AI-assisted code review integrated into the engineering workflow."
   ],
   highlights: [
@@ -165,7 +165,7 @@ export const resumeEn: ResumeContent = {
       company: "Luxury Escapes",
       companyUrl: "https://luxuryescapes.com",
       location: "Remote | Melbourne, Australia",
-      period: "February 2026 – July 2026",
+      period: "February 2026 – Present",
       intro:
         "Luxury Escapes is a global travel e-commerce company operating accommodation, experiences, tours, transfers, and travel package products across international markets.",
       bullets: [
@@ -383,7 +383,7 @@ export const resumePt: ResumeContent = {
   ],
   summary: [
     "Engenheiro de Software Sênior e Arquiteto de Software com mais de 15 anos de experiência na construção de plataformas de backend, sistemas distribuídos, serviços nativos de nuvem e integrações de produto nos setores de turismo, comércio eletrônico, varejo, serviços bancários, ERP e automação industrial.",
-    "Minha experiência mais recente foi na Luxury Escapes, na vertical de Experiências, construindo tecnologia para turismo com integrações de fornecedores, fluxos de reserva, curadoria de atrações com IA, busca e descoberta, análise de dados e confiabilidade operacional. Tenho forte experiência prática com TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, AWS, Azure, Kubernetes, Terraform, CI/CD, Datadog, OpenTelemetry e IA generativa/RAG.",
+    "Atualmente trabalho na Luxury Escapes, na vertical de Experiências, construindo tecnologia para turismo com integrações de fornecedores, fluxos de reserva, curadoria de atrações com IA, busca e descoberta, análise de dados e confiabilidade operacional. Tenho forte experiência prática com TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, AWS, Azure, Kubernetes, Terraform, CI/CD, Datadog, OpenTelemetry e IA generativa/RAG.",
     "Trabalho bem com equipes internacionais e remotas, assumo problemas técnicos ambíguos de ponta a ponta e combino engenharia de produção com arquitetura, mentoria, revisão de código e entrega multidisciplinar de produtos. O desenvolvimento assistido por IA faz parte da minha rotina, com agentes de programação baseados em Claude, desenvolvimento orientado por especificações, engenharia de contexto e revisão de código assistida por IA integrados ao fluxo de engenharia."
   ],
   highlights: [
@@ -408,7 +408,7 @@ export const resumePt: ResumeContent = {
       company: "Luxury Escapes",
       companyUrl: "https://luxuryescapes.com",
       location: "Remoto | Melbourne, Austrália",
-      period: "fevereiro de 2026 – julho de 2026",
+      period: "fevereiro de 2026 – presente",
       intro:
         "A Luxury Escapes é uma empresa global de comércio eletrônico para turismo que oferece hospedagens, experiências, passeios, traslados e pacotes de viagem em mercados internacionais.",
       bullets: [
