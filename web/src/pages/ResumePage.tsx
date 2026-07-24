@@ -144,7 +144,7 @@ export function ResumePage({
           <header className="resume-profile">
             <div>
               <p className="eyebrow">{content.documentLabel}</p>
-              <h1>Ivan Augusto Hoinacki</h1>
+              <h1>Ivan Hoinacki</h1>
               <p className="resume-headline">{content.headline}</p>
               <p className="resume-meta">{content.meta}</p>
             </div>

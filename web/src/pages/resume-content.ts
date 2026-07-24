@@ -94,7 +94,7 @@ export const resumeEn: ResumeContent = {
     light: "Switch to light theme"
   },
   headline:
-    "Senior Software Engineer | Backend & Platform Engineering | TypeScript, Node.js, AWS | Travel Tech | AI-Assisted Development",
+    "Senior Software Engineer at Luxury Escapes | Node.js & TypeScript | Travel Tech: Supplier Integrations, Bookings & Search | AI Engineering | AWS | Software Architect",
   meta: "Brazil, UTC-3 | Remote / Global | English: professional working proficiency",
   scheduleLabel: "Meeting with Ivan Hoinacki - 30min",
   technologiesLabel: "Technologies",
@@ -140,7 +140,7 @@ export const resumeEn: ResumeContent = {
   ],
   summary: [
     "Senior Software Engineer and Software Architect with 15+ years of experience building backend platforms, distributed systems, cloud-native services, and product integrations across travel, e-commerce, retail, banking, ERP, and industrial automation.",
-    "Currently working at Luxury Escapes in the Experiences vertical, building travel technology around provider integrations, booking flows, AI-powered attraction curation, search/discovery, analytics, and operational reliability. Strong hands-on background in TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, AWS, Azure, Kubernetes, Terraform, CI/CD, Datadog, OpenTelemetry, and GenAI/RAG.",
+    "At Luxury Escapes, I build travel technology around provider integrations, booking flows, AI-powered attraction curation, search/discovery, analytics, and operational reliability. Strong hands-on experience with TypeScript and Node.js, complemented by Java, Spring Boot, Spring Data (JPA/Hibernate), Spring Security, Actuator, Ruby on Rails, PostgreSQL, Redis, Kafka, and cloud platforms across AWS, GCP, and Azure, with Terraform and Prometheus/Grafana.",
     "I work well in remote international teams, own ambiguous technical problems end to end, and combine production engineering with architecture, mentoring, code review, and cross-functional product delivery. AI-assisted development is my daily practice: Claude-based coding agents, spec-driven development, context engineering, and AI-assisted code review integrated into the engineering workflow."
   ],
   highlights: [
@@ -152,11 +152,11 @@ export const resumeEn: ResumeContent = {
     "Built web engineering foundations from scratch at Limber Software, scaling from the first web engineering role into multiple specialized teams."
   ],
   skills: [
-    "Backend: TypeScript, Node.js, NestJS, Express, Go, Python/FastAPI, REST, GraphQL, gRPC, OpenAPI.",
+    "Backend: TypeScript, Node.js, NestJS, Express, Java, Spring Boot, Spring Data (JPA/Hibernate), Spring Security, Actuator, Ruby, Rails, Go, Python/FastAPI, REST, GraphQL, gRPC, OpenAPI.",
     "Cloud and platform: AWS, Azure, GCP, Docker, Kubernetes, Terraform, Helm, GitHub Actions, GitLab CI, Azure DevOps.",
     "Data and observability: PostgreSQL, PostGIS, MongoDB, Redis, BigQuery, Snowplow, Datadog, OpenTelemetry, Prometheus, Grafana.",
-    "Architecture: Microservices, event-driven systems, DDD, Clean Architecture, BFF, serverless, replatforming, monolith-to-microservices decomposition.",
-    "AI and automation: AI-assisted development (Claude, Claude Code, coding agents), spec-driven development, Anthropic API, OpenAI API, RAG, MCP, GenAI governance, prompt engineering, validation guardrails, model workflows.",
+    "Architecture and messaging: Microservices, event-driven systems, Kafka, retry, DLQ, business-key idempotent consumers, DDD, Clean Architecture, BFF, serverless, replatforming, monolith-to-microservices decomposition.",
+    "AI and automation: AI-assisted development (Claude, Claude Code, coding agents), spec-driven development, Anthropic API, OpenAI API, RAG, MCP, GenAI governance, prompt engineering, rule-based validation guardrails, model workflows.",
     "Leadership: architecture reviews, code reviews, mentoring, technical planning, delivery alignment, engineering standards."
   ],
   experience: [
@@ -172,7 +172,7 @@ export const resumeEn: ResumeContent = {
         "Owned backend and product engineering work in the Experiences vertical, covering attractions, tours, provider integrations, search/discovery, booking flows, voucher flows, analytics, and operational reliability.",
         "Designed and shipped backend services and integrations across multi-repository systems involving order flows, customer-facing surfaces, admin workflows, and third-party provider APIs.",
         "Built and evolved an AI-powered attraction curation pipeline, expanding coverage from 75 attractions in 5 cities to 1,193+ attractions across 18 countries and 56 cities.",
-        "Added validation guardrails to AI-generated attraction data using geocoding, Google Places validation, deduplication, and quality checks.",
+        "Built a fully automated validation layer with no human review, using guardrails and rule-based geocoding, Google Places validation, deduplication, and quality checks to detect and reject invalid or hallucinated outputs.",
         "Delivered B2B travel provider integration improvements (CustomLinc / South Sea Cruises, Rezdy, and Klook): availability sync, booking flows, vouchers, cancellation behavior, fare/product mapping, and reconciliation data.",
         "Contributed to the Experiences Passport MVP: backend foundations, data model, endpoints, voucher lifecycle, redemption sync, order integration, search badge, deal page section, and My Escapes vouchers.",
         "Built operational visibility with BigQuery, Snowplow, and Datadog for product analytics, provider behavior, curation quality, and engineering diagnostics.",
@@ -212,6 +212,7 @@ export const resumeEn: ResumeContent = {
       bullets: [
         "Led architecture discussions, technical breakdowns, feature decomposition, and delivery planning for multidisciplinary squads.",
         "Built and modernized Node.js/TypeScript services using NestJS, Clean Architecture, DDD, REST APIs, distributed messaging, and cloud-native deployment patterns.",
+        "Built Java/Spring Boot services with Spring Data (JPA/Hibernate), Spring Security, Actuator, PostgreSQL, and Redis, plus Kafka consumers with retry, DLQ, and business-key idempotency; cleared the DLQ after tuning consumer concurrency.",
         "Acted as technical reference through code reviews, mentoring, guilds, engineering standards, and stakeholder alignment with Product, Delivery, and Commercial teams.",
         "Modernized customer-facing BFF services to NestJS and contributed to migrations from Django-based systems to Node.js/MongoDB services.",
         "Reduced critical bugs from 69 to 35 in 4 weeks during a high-priority product stabilization effort.",
@@ -220,7 +221,7 @@ export const resumeEn: ResumeContent = {
         "Received the ília Awards 2023 in two categories: Learning and Creativity."
       ],
       technologies:
-        "TypeScript, Node.js, NestJS, Express, Go, Java, React, Azure AKS, Azure Functions, Azure Service Bus, AWS, Docker, Kubernetes, Terraform, PostgreSQL, MongoDB, Redis, Jest, Supertest, Pact"
+        "Java, Spring Boot, Spring Data (JPA/Hibernate), Spring Security, Actuator, Kafka, PostgreSQL, Redis, TypeScript, Node.js, NestJS, Express, Go, React, Azure AKS, Azure Functions, Azure Service Bus, AWS, Docker, Kubernetes, Terraform, MongoDB, Jest, Supertest, Pact"
     },
     {
       role: "Staff Software Engineer / Tech Lead / Senior Software Engineer",
@@ -337,7 +338,7 @@ export const resumePt: ResumeContent = {
     light: "Mudar para o tema claro"
   },
   headline:
-    "Engenheiro de Software Sênior | Engenharia de Backend e Plataforma | TypeScript, Node.js, AWS | Tecnologia para Turismo | Desenvolvimento Assistido por IA",
+    "Engenheiro de Software Sênior na Luxury Escapes | Node.js e TypeScript | Tecnologia para Turismo: Integrações com Fornecedores, Reservas e Busca | Engenharia de IA | AWS | Arquiteto de Software",
   meta: "Brasil, UTC-3 | Remoto / Global | Inglês: proficiência profissional",
   scheduleLabel: "Agendar conversa de 30 min com Ivan Hoinacki",
   technologiesLabel: "Tecnologias",
@@ -383,7 +384,7 @@ export const resumePt: ResumeContent = {
   ],
   summary: [
     "Engenheiro de Software Sênior e Arquiteto de Software com mais de 15 anos de experiência na construção de plataformas de backend, sistemas distribuídos, serviços nativos de nuvem e integrações de produto nos setores de turismo, comércio eletrônico, varejo, serviços bancários, ERP e automação industrial.",
-    "Atualmente trabalho na Luxury Escapes, na vertical de Experiências, construindo tecnologia para turismo com integrações de fornecedores, fluxos de reserva, curadoria de atrações com IA, busca e descoberta, análise de dados e confiabilidade operacional. Tenho forte experiência prática com TypeScript, Node.js, NestJS, PostgreSQL, MongoDB, Redis, AWS, Azure, Kubernetes, Terraform, CI/CD, Datadog, OpenTelemetry e IA generativa/RAG.",
+    "Na Luxury Escapes, construo tecnologia para turismo com integrações de fornecedores, reservas, curadoria de atrações com IA, busca, análise de dados e confiabilidade operacional. Tenho forte experiência prática com TypeScript e Node.js, complementada por Java, Spring Boot, Spring Data (JPA/Hibernate), Spring Security, Actuator, Ruby on Rails, PostgreSQL, Redis, Kafka e plataformas de nuvem AWS, GCP e Azure, com Terraform e Prometheus/Grafana.",
     "Trabalho bem com equipes internacionais e remotas, assumo problemas técnicos ambíguos de ponta a ponta e combino engenharia de produção com arquitetura, mentoria, revisão de código e entrega multidisciplinar de produtos. O desenvolvimento assistido por IA faz parte da minha rotina, com agentes de programação baseados em Claude, desenvolvimento orientado por especificações, engenharia de contexto e revisão de código assistida por IA integrados ao fluxo de engenharia."
   ],
   highlights: [
@@ -395,11 +396,11 @@ export const resumePt: ResumeContent = {
     "Construí as bases de engenharia web na Limber Software do zero, escalando do primeiro papel de engenharia web para múltiplos times especializados."
   ],
   skills: [
-    "Backend: TypeScript, Node.js, NestJS, Express, Go, Python/FastAPI, REST, GraphQL, gRPC, OpenAPI.",
+    "Backend: TypeScript, Node.js, NestJS, Express, Java, Spring Boot, Spring Data (JPA/Hibernate), Spring Security, Actuator, Ruby, Rails, Go, Python/FastAPI, REST, GraphQL, gRPC, OpenAPI.",
     "Nuvem e plataforma: AWS, Azure, GCP, Docker, Kubernetes, Terraform, Helm, GitHub Actions, GitLab CI, Azure DevOps.",
     "Dados e observabilidade: PostgreSQL, PostGIS, MongoDB, Redis, BigQuery, Snowplow, Datadog, OpenTelemetry, Prometheus, Grafana.",
-    "Arquitetura: microsserviços, sistemas orientados a eventos, DDD, Arquitetura Limpa, BFF, computação sem servidor, modernização de plataformas e decomposição de monólitos.",
-    "IA e automação: desenvolvimento assistido por IA com Claude e Claude Code, agentes de programação, desenvolvimento orientado por especificações, APIs da Anthropic e OpenAI, RAG, MCP, governança de IA generativa, engenharia de prompts, mecanismos de validação e fluxos de modelos.",
+    "Arquitetura e mensageria: microsserviços, sistemas orientados a eventos, Kafka, retry, DLQ, consumidores idempotentes por chave de negócio, DDD, Arquitetura Limpa, BFF, computação sem servidor, modernização de plataformas e decomposição de monólitos.",
+    "IA e automação: desenvolvimento assistido por IA com Claude e Claude Code, agentes de programação, desenvolvimento orientado por especificações, APIs da Anthropic e OpenAI, RAG, MCP, governança de IA generativa, engenharia de prompts, guardrails de validação baseados em regras e fluxos de modelos.",
     "Liderança: revisões de arquitetura e de código, mentoria, planejamento técnico, alinhamento de entregas e padrões de engenharia."
   ],
   experience: [
@@ -408,14 +409,14 @@ export const resumePt: ResumeContent = {
       company: "Luxury Escapes",
       companyUrl: "https://luxuryescapes.com",
       location: "Remoto | Melbourne, Austrália",
-      period: "fevereiro de 2026 – presente",
+      period: "fevereiro de 2026 – atual",
       intro:
         "A Luxury Escapes é uma empresa global de comércio eletrônico para turismo que oferece hospedagens, experiências, passeios, traslados e pacotes de viagem em mercados internacionais.",
       bullets: [
         "Assumi de ponta a ponta a engenharia de backend e de produto na vertical de Experiências, abrangendo atrações, passeios, integrações com fornecedores, busca e descoberta, reservas, vouchers, análise de dados e confiabilidade operacional.",
         "Projetei e entreguei serviços de backend e integrações em sistemas com múltiplos repositórios, envolvendo fluxos de pedidos, interfaces para clientes, rotinas administrativas e APIs de fornecedores externos.",
         "Construí e evoluí uma esteira de curadoria de atrações com IA, ampliando a cobertura de 75 atrações em 5 cidades para mais de 1.193 atrações em 18 países e 56 cidades.",
-        "Adicionei mecanismos de validação aos dados de atrações gerados por IA, usando geocodificação, validação pelo Google Places, deduplicação e verificações de qualidade.",
+        "Construí uma camada de validação totalmente automatizada, sem revisão humana, usando guardrails e regras de geocodificação, Google Places, deduplicação e verificações de qualidade para detectar e rejeitar saídas inválidas ou alucinadas.",
         "Entreguei melhorias nas integrações B2B com fornecedores de turismo — CustomLinc / South Sea Cruises, Rezdy e Klook — incluindo sincronização de disponibilidade, reservas, vouchers, cancelamentos, mapeamento de tarifas e produtos e dados de conciliação.",
         "Contribuí para o produto mínimo viável do Experiences Passport com fundações de backend, modelo de dados, endpoints, ciclo de vida de vouchers, sincronização de resgates, integração de pedidos, selo de busca, seção na página da oferta e vouchers no My Escapes.",
         "Construí visibilidade operacional com BigQuery, Snowplow e Datadog para análise de produto, comportamento de fornecedores, qualidade da curadoria e diagnóstico de engenharia.",
@@ -455,6 +456,7 @@ export const resumePt: ResumeContent = {
       bullets: [
         "Liderei discussões de arquitetura, detalhamento técnico, decomposição de funcionalidades e planejamento de entregas para equipes multidisciplinares.",
         "Construí e modernizei serviços Node.js/TypeScript com NestJS, Arquitetura Limpa, DDD, APIs REST, mensageria distribuída e padrões de implantação nativos de nuvem.",
+        "Construí serviços Java/Spring Boot com Spring Data (JPA/Hibernate), Spring Security, Actuator, PostgreSQL e Redis, além de consumidores Kafka com retry, DLQ e idempotência por chave de negócio; eliminei o backlog da DLQ após ajustar a concorrência dos consumidores.",
         "Atuei como referência técnica por meio de revisões de código, mentoria, comunidades de prática, padrões de engenharia e alinhamento com Produto, Entrega e Comercial.",
         "Modernizei serviços BFF voltados ao cliente para NestJS e contribuí para migrações de sistemas Django para serviços Node.js/MongoDB.",
         "Reduzi bugs críticos de 69 para 35 em 4 semanas durante um esforço prioritário de estabilização de produto.",
@@ -463,7 +465,7 @@ export const resumePt: ResumeContent = {
         "Recebi o ília Awards 2023 nas categorias Aprendizado e Criatividade."
       ],
       technologies:
-        "TypeScript, Node.js, NestJS, Express, Go, Java, React, Azure AKS, Azure Functions, Azure Service Bus, AWS, Docker, Kubernetes, Terraform, PostgreSQL, MongoDB, Redis, Jest, Supertest, Pact"
+        "Java, Spring Boot, Spring Data (JPA/Hibernate), Spring Security, Actuator, Kafka, PostgreSQL, Redis, TypeScript, Node.js, NestJS, Express, Go, React, Azure AKS, Azure Functions, Azure Service Bus, AWS, Docker, Kubernetes, Terraform, MongoDB, Jest, Supertest, Pact"
     },
     {
       role: "Engenheiro de Software Staff / Líder Técnico / Engenheiro de Software Sênior",

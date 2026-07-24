@@ -7,7 +7,7 @@ Personal portfolio and resume website for Ivan Hoinacki.
 - React 18
 - TypeScript
 - Vite
-- CSS with responsive light/dark themes and dark mode by default
+- CSS with responsive light/dark themes and light mode by default
 - GitHub Pages
 
 The application lives in [`web/`](web/). The previous Angular application was removed after the React migration.

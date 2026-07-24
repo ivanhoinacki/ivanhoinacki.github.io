@@ -17,22 +17,29 @@
     <meta property="og:url" content="https://ivanhoinacki.github.io/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Ivan Hoinacki · Senior Software Engineer</title>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-491P3X3JT5"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
+      if (window.location.hostname === "ivanhoinacki.github.io") {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () {
+          window.dataLayer.push(arguments);
+        };
+
+        const googleTag = document.createElement("script");
+        googleTag.async = true;
+        googleTag.src = "https://www.googletagmanager.com/gtag/js?id=G-491P3X3JT5";
+        document.head.appendChild(googleTag);
+
+        window.gtag("js", new Date());
+        window.gtag("config", "G-491P3X3JT5", {
+          send_page_view: false,
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+        });
       }
-      gtag("js", new Date());
-      gtag("config", "G-491P3X3JT5", {
-        send_page_view: false,
-        allow_google_signals: false,
-        allow_ad_personalization_signals: false,
-      });
     </script>
     <script>
       const storedTheme = localStorage.getItem("portfolio-theme");
-      document.documentElement.dataset.theme = storedTheme === "light" ? "light" : "dark";
+      document.documentElement.dataset.theme = storedTheme === "dark" ? "dark" : "light";
     </script>
   </head>
   <body>
