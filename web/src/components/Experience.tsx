@@ -4,7 +4,7 @@ const experience = [
   {
     role: "Senior Software Engineer",
     company: "Luxury Escapes",
-    period: "2026 – Present",
+    period: "Feb 2026 – Present",
     location: "Remote · Australia",
     summary:
       "Building travel technology across provider integrations, booking flows, search and discovery, operational reliability, and AI-powered attraction curation.",
@@ -26,7 +26,7 @@ const experience = [
     location: "Remote · Brazil",
     summary:
       "Led architecture and delivery for international banking, loyalty, mobility, and enterprise products in multidisciplinary teams.",
-    technologies: ["Node.js", "NestJS", "AWS", "Azure", "MongoDB", "DDD", "Clean Architecture"]
+    technologies: ["Java", "Spring Boot", "Kafka", "Node.js", "NestJS", "Azure", "DDD"]
   },
   {
     role: "Staff Software Engineer / Tech Lead",

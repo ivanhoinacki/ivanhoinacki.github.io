@@ -12,7 +12,7 @@ const skillGroups = [
     icon: Braces,
     title: "Backend Engineering",
     description: "Distributed services and product integrations built for change.",
-    skills: ["TypeScript", "Node.js", "NestJS", "REST", "GraphQL", "gRPC"]
+    skills: ["TypeScript", "Node.js", "Java", "Spring Boot", "Ruby", "Rails", "Kafka", "REST"]
   },
   {
     icon: CloudCog,

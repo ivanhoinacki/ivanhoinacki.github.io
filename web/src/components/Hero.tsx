@@ -52,7 +52,11 @@ export function Hero() {
           <div>
             <p className="eyebrow">Hello, I&apos;m</p>
             <h1>Ivan Hoinacki</h1>
-            <p className="hero-title">Senior Software Engineer · Backend, Platform &amp; AI</p>
+            <p className="hero-title">
+              Senior Software Engineer
+              <br />
+              Backend, Platform &amp; AI Engineering
+            </p>
           </div>
 
           <p className="hero-description">
