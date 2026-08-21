@@ -48,16 +48,21 @@ export default function App() {
 
   useEffect(() => {
     const isPortuguese = route === "#/resume-pt";
+    const isResume = isPortuguese || route === "#/resume-us" || route === "#/resume-en";
     document.documentElement.lang = isPortuguese ? "pt-BR" : "en";
-    document.title = isPortuguese
-      ? "Ivan Hoinacki · Engenheiro de Software Sênior"
+    document.title = isResume
+      ? isPortuguese
+        ? "Ivan Hoinacki · Senior Full Stack Engineer e Arquiteto de Software"
+        : "Ivan Hoinacki · Senior Full Stack Engineer and Software Architect"
       : "Ivan Hoinacki · Senior Software Engineer";
 
     const description = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     description?.setAttribute(
       "content",
-      isPortuguese
-        ? "Ivan Hoinacki é Engenheiro de Software Sênior com foco em plataformas de backend, sistemas nativos de nuvem, tecnologia para turismo e engenharia assistida por IA."
+      isResume
+        ? isPortuguese
+          ? "Currículo de Ivan Hoinacki, Senior Full Stack Engineer e Arquiteto de Software com mais de 15 anos em sistemas distribuídos, cloud, integrações e engenharia de agentes."
+          : "Resume of Ivan Hoinacki, Senior Full Stack Engineer and Software Architect with more than 15 years in distributed systems, cloud, integrations, and agent engineering."
         : "Ivan Hoinacki is a Senior Software Engineer focused on backend platforms, cloud-native systems, travel technology, and AI-assisted engineering."
     );
   }, [route]);

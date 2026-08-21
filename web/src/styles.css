@@ -1063,6 +1063,23 @@ h3,
   line-height: 1.63;
 }
 
+.resume-subrole + .resume-subrole {
+  margin-top: 18px;
+}
+
+.resume-subrole h4 {
+  margin-bottom: 9px;
+  color: var(--foreground);
+  font-size: 0.88rem;
+}
+
+.resume-subrole ul {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.63;
+}
+
 .resume-role-intro {
   margin-bottom: 15px;
   font-style: italic;
