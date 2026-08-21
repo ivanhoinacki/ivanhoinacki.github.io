@@ -153,7 +153,7 @@ export const resumeEn: ResumeContent = {
   },
   headline:
     "Senior Full Stack Engineer | Software Architect | Node.js, TypeScript, applied AI, distributed systems, and cloud",
-  meta: "Brazil, UTC-3 | Remote / Global | English: daily professional use",
+  meta: "Brazil, UTC-3 | Remote / Global | English: B1+/B2, daily professional use",
   scheduleLabel: "Meeting with Ivan Hoinacki - 30min",
   technologiesLabel: "Technologies",
   downloads: [
@@ -413,7 +413,7 @@ export const resumeEn: ResumeContent = {
   alura: aluraCertificates,
   languages: [
     "Portuguese: native.",
-    "English: daily professional use, EF SET C2 certified.",
+    "English: current B1+/B2 proficiency, used professionally every day; EF SET C2 certificate earned in 2023.",
     "Spanish: intermediate B1 (self-directed study and occasional professional use).",
   ],
   contact: [
@@ -439,7 +439,7 @@ export const resumePt: ResumeContent = {
   },
   headline:
     "Senior Full Stack Engineer | Arquiteto de Software | Node.js, TypeScript, IA aplicada, sistemas distribuídos e cloud",
-  meta: "Brasil, UTC-3 | Remoto / Global | Inglês: uso profissional diário",
+  meta: "Brasil, UTC-3 | Remoto / Global | Inglês: B1+/B2, uso profissional diário",
   scheduleLabel: "Agendar conversa de 30 min com Ivan Hoinacki",
   technologiesLabel: "Tecnologias",
   downloads: [
@@ -696,7 +696,7 @@ export const resumePt: ResumeContent = {
   alura: aluraCertificatesPt,
   languages: [
     "Português: nativo.",
-    "Inglês: uso profissional diário, certificado EF SET C2.",
+    "Inglês: nível atual B1+/B2, com uso profissional diário; certificado EF SET C2 obtido em 2023.",
     "Espanhol: proficiência média B1 (estudo autônomo e uso ocasional no trabalho).",
   ],
   contact: [
