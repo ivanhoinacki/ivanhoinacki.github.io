@@ -73,11 +73,23 @@ function Role({
         </div>
       </div>
       {role.intro && <p className="resume-role-intro">{role.intro}</p>}
-      <ul>
-        {role.bullets.map((bullet) => (
-          <li key={bullet}>{bullet}</li>
-        ))}
-      </ul>
+      {role.bullets && (
+        <ul>
+          {role.bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
+      )}
+      {role.subroles?.map((subrole) => (
+        <section className="resume-subrole" key={subrole.role}>
+          <h4>{subrole.role}</h4>
+          <ul>
+            {subrole.bullets.map((bullet) => (
+              <li key={bullet}>{bullet}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
       {role.technologies && (
         <p className="resume-technologies">
           <strong>{technologiesLabel}:</strong> {role.technologies}
