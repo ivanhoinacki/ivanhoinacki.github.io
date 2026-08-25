@@ -152,7 +152,7 @@ export const resumeEn: ResumeContent = {
     light: "Switch to light theme",
   },
   headline:
-    "Senior Full Stack Engineer | Software Architect | Node.js, TypeScript, applied AI, distributed systems, and cloud",
+    "Senior Software Engineer | Backend, Full Stack & Software Architecture | Node.js, TypeScript, AWS, distributed systems, and applied AI",
   meta: "Brazil, UTC-3 | Remote / Global | English: B1+/B2, daily professional use",
   scheduleLabel: "Meeting with Ivan Hoinacki - 30min",
   technologiesLabel: "Technologies",
@@ -199,7 +199,7 @@ export const resumeEn: ResumeContent = {
     },
   ],
   summary: [
-    "Senior Full Stack Engineer and Software Architect with more than 15 years of experience designing, modernizing, and operating distributed systems, cloud platforms, and critical product integrations. Hands-on background across travel, e-commerce, retail, banking, ERP, and industrial automation, combining technical depth with leadership of complex deliveries.",
+    "Senior Software Engineer and Software Architect with more than 15 years of experience designing, modernizing, and operating distributed systems, cloud platforms, and critical product integrations. Hands-on background across travel, e-commerce, retail, banking, ERP, and industrial automation, combining technical depth with leadership of complex deliveries.",
     "At Luxury Escapes, I own end-to-end changes across B2C, B2B, and administrative services and interfaces in the Experiences vertical, covering search, availability, bookings, vouchers, orders, analytics, and global travel provider integrations. I scaled an AI-powered curation platform roughly 16-fold and work hands-on with TypeScript, Node.js, React, Ruby, PostgreSQL, BigQuery, Datadog, and AWS.",
     "I work in remote international teams as a hands-on engineer and technical reference, turning ambiguous problems into architecture, tested software, observable rollouts, and reliable operations. I design agent ecosystems around specifications, service-level context, automation, tests, and human review while retaining accountability for security, quality, and production behavior.",
   ],
@@ -223,7 +223,7 @@ export const resumeEn: ResumeContent = {
   ],
   experience: [
     {
-      role: "Senior Full Stack Engineer",
+      role: "Senior Software Engineer",
       company: "Luxury Escapes",
       companyUrl: "https://luxuryescapes.com",
       location: "Remote | Melbourne, Australia",
@@ -285,7 +285,7 @@ export const resumeEn: ResumeContent = {
           role: "Tech Lead",
           bullets: [
             "Led projects for clients in financial services, retail, and digital platforms, defining architecture, feature decomposition, and delivery planning for multidisciplinary squads.",
-            "Took over an international Open Banking project for Santander UK after the original technical lead left, coordinating 2 remote, multicultural teams on distributed service architecture and the validation of security, GDPR, and KYC requirements.",
+            "Took over an international Open Banking project for a major UK bank after the original technical lead left, coordinating 2 remote, multicultural teams on distributed service architecture and the validation of security, GDPR, and KYC requirements.",
             "Served as a technical reference through code reviews, mentoring, engineering guilds, standards, and alignment with Product, Delivery, and Commercial teams.",
           ],
         },
@@ -438,7 +438,7 @@ export const resumePt: ResumeContent = {
     light: "Mudar para o tema claro",
   },
   headline:
-    "Senior Full Stack Engineer | Arquiteto de Software | Node.js, TypeScript, IA aplicada, sistemas distribuídos e cloud",
+    "Engenheiro de Software Sênior | Backend, Full Stack e Arquitetura de Software | Node.js, TypeScript, AWS, sistemas distribuídos e IA aplicada",
   meta: "Brasil, UTC-3 | Remoto / Global | Inglês: B1+/B2, uso profissional diário",
   scheduleLabel: "Agendar conversa de 30 min com Ivan Hoinacki",
   technologiesLabel: "Tecnologias",
@@ -485,7 +485,7 @@ export const resumePt: ResumeContent = {
     },
   ],
   summary: [
-    "Senior Full Stack Engineer e Arquiteto de Software com mais de 15 anos de experiência projetando, modernizando e operando sistemas distribuídos, plataformas cloud e integrações críticas de produto. Atuação prática em turismo, e-commerce, varejo, bancos, ERP e automação industrial, combinando profundidade técnica com liderança de entregas complexas.",
+    "Engenheiro de Software Sênior e Arquiteto de Software com mais de 15 anos de experiência projetando, modernizando e operando sistemas distribuídos, plataformas cloud e integrações críticas de produto. Atuação prática em turismo, e-commerce, varejo, bancos, ERP e automação industrial, combinando profundidade técnica com liderança de entregas complexas.",
     "Na Luxury Escapes, assumo mudanças ponta a ponta na vertical de Experiences em serviços e interfaces B2C, B2B e administrativas, cobrindo busca, disponibilidade, reservas, vouchers, pedidos, analytics e integrações com fornecedores globais. Escalei em aproximadamente 16 vezes uma plataforma de curadoria com IA e entrego em TypeScript, Node.js, React, Ruby, PostgreSQL, BigQuery, Datadog e AWS.",
     "Atuo em equipes internacionais e remotas como engenheiro hands-on e referência técnica, transformando problemas ambíguos em arquitetura, software testado, rollout observável e operação confiável. Estruturo ecossistemas de agentes com especificações, contexto por serviço, automações, testes e revisão humana, mantendo responsabilidade por segurança, qualidade e comportamento em produção.",
   ],
@@ -509,7 +509,7 @@ export const resumePt: ResumeContent = {
   ],
   experience: [
     {
-      role: "Senior Full Stack Engineer",
+      role: "Senior Software Engineer",
       company: "Luxury Escapes",
       companyUrl: "https://luxuryescapes.com",
       location: "Remoto | Melbourne, Austrália",
@@ -517,7 +517,7 @@ export const resumePt: ResumeContent = {
       intro:
         "Empresa global de comércio eletrônico para turismo que oferece hospedagens, experiências, passeios, traslados e pacotes de viagem em mercados internacionais.",
       bullets: [
-        "Atuo como Senior Full Stack Engineer na vertical de Experiences, assumindo mudanças ponta a ponta em um ecossistema distribuído de serviços e interfaces B2C, B2B e administrativas para busca, disponibilidade, reservas, vouchers e integrações com fornecedores.",
+        "Atuo como Senior Software Engineer na vertical de Experiences, assumindo mudanças ponta a ponta em um ecossistema distribuído de serviços e interfaces B2C, B2B e administrativas para busca, disponibilidade, reservas, vouchers e integrações com fornecedores.",
         "Implemento mudanças entre domínios em serviços Node.js, TypeScript e Ruby de diferentes squads, validando contratos, comportamento e integração antes do code review pelo time proprietário e do rollout em produção.",
         "Escalei uma esteira de curadoria de atrações com IA de 75 atrações em 5 cidades para mais de 1.193 atrações em 18 países e 56 cidades.",
         "Automatizei a validação da curadoria sem depender de revisão manual por atração, combinando guardrails, geocodificação, Google Places, deduplicação e regras de qualidade para bloquear dados inválidos ou alucinados antes da publicação.",
@@ -571,7 +571,7 @@ export const resumePt: ResumeContent = {
           role: "Líder Técnico",
           bullets: [
             "Assumi a liderança técnica de projetos para clientes dos setores financeiro, varejista e de plataformas digitais, definindo arquitetura, decomposição de funcionalidades e planejamento de entregas para squads multidisciplinares.",
-            "Assumi um projeto internacional de Open Banking do Santander no Reino Unido após a saída do líder técnico original, coordenando 2 equipes remotas e multiculturais na arquitetura distribuída dos serviços e na validação de requisitos de segurança, GDPR e KYC.",
+            "Assumi um projeto internacional de Open Banking de um grande banco do Reino Unido após a saída do líder técnico original, coordenando 2 equipes remotas e multiculturais na arquitetura distribuída dos serviços e na validação de requisitos de segurança, GDPR e KYC.",
             "Atuei como referência técnica por meio de revisão de código, mentoria, guildas, padrões de engenharia e alinhamento com Produto, Delivery e Comercial.",
           ],
         },
